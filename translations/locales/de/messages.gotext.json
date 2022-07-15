@@ -1,0 +1,197 @@
+{
+    "language": "de",
+    "messages": [
+        {
+            "id": "{Months} months",
+            "message": "{Months} months",
+            "translation": {
+                "select": {
+                    "feature": "plural",
+                    "arg": "Months",
+                    "cases": {
+                        "=1": {
+                            "msg": "{Months} Monat"
+                        },
+                        "other": {
+                            "msg": "{Months} Monaten"
+                        }
+                    }
+                }
+            },
+            "placeholders": [
+                {
+                    "id": "Months",
+                    "string": "%[1]d",
+                    "type": "int",
+                    "underlyingType": "int",
+                    "argNum": 1,
+                    "expr": "counter.Months"
+                }
+            ]
+        },
+        {
+            "id": "{Days} days",
+            "message": "{Days} days",
+            "translation": {
+                "select": {
+                    "feature": "plural",
+                    "arg": "Days",
+                    "cases": {
+                        "=1": {
+                            "msg": "{Days} Tag"
+                        },
+                        "other": {
+                            "msg": "{Days} Tagen"
+                        }
+                    }
+                }
+            },
+            "placeholders": [
+                {
+                    "id": "Days",
+                    "string": "%[1]d",
+                    "type": "int",
+                    "underlyingType": "int",
+                    "argNum": 1,
+                    "expr": "counter.Days"
+                }
+            ]
+        },
+        {
+            "id": "{Hours} hours",
+            "message": "{Hours} hours",
+            "translation": {
+                "select": {
+                    "feature": "plural",
+                    "arg": "Hours",
+                    "cases": {
+                        "=1": {
+                            "msg": "{Hours} Stunde"
+                        },
+                        "other": {
+                            "msg": "{Hours} Stunden"
+                        }
+                    }
+                }
+            },
+            "placeholders": [
+                {
+                    "id": "Hours",
+                    "string": "%[1]d",
+                    "type": "int",
+                    "underlyingType": "int",
+                    "argNum": 1,
+                    "expr": "counter.Hours"
+                }
+            ]
+        },
+        {
+            "id": "{Minutes} minutes",
+            "message": "{Minutes} minutes",
+            "translation": {
+                "select": {
+                    "feature": "plural",
+                    "arg": "Minutes",
+                    "cases": {
+                        "=1": {
+                            "msg": "{Minutes} Minute"
+                        },
+                        "other": {
+                            "msg": "{Minutes} Minuten"
+                        }
+                    }
+                }
+            },
+            "placeholders": [
+                {
+                    "id": "Minutes",
+                    "string": "%[1]d",
+                    "type": "int",
+                    "underlyingType": "int",
+                    "argNum": 1,
+                    "expr": "counter.Minutes"
+                }
+            ]
+        },
+        {
+            "id": "{Name} has created a notifier which connects this channel to an external calendar.",
+            "message": "{Name} has created a notifier which connects this channel to an external calendar.",
+            "translation": "{Name} hat einen Notifier erstellt, der diesen Kanal mit einem externen Kalender verbindet.",
+            "placeholders": [
+                {
+                    "id": "Name",
+                    "string": "%[1]s",
+                    "type": "string",
+                    "underlyingType": "string",
+                    "argNum": 1,
+                    "expr": "user.Name"
+                }
+            ]
+        },
+        {
+            "id": "{Name} has deleted a notifier which connected this channel to an external calendar",
+            "message": "{Name} has deleted a notifier which connected this channel to an external calendar",
+            "translation": "{Name} hat einen Notifier gelöscht, der diesen Kanal mit einem externen Kalender verbunden hat.",
+            "placeholders": [
+                {
+                    "id": "Name",
+                    "string": "%[1]s",
+                    "type": "string",
+                    "underlyingType": "string",
+                    "argNum": 1,
+                    "expr": "user.Name"
+                }
+            ]
+        },
+        {
+            "id": "Events for the next {Days} days",
+            "message": "Events for the next {Days} days",
+            "translation": "Veranstaltungen für die nächsten {Days} Tage",
+            "placeholders": [
+                {
+                    "id": "Days",
+                    "string": "%[1]d",
+                    "type": "int",
+                    "underlyingType": "int",
+                    "argNum": 1,
+                    "expr": "eventSummary.Days"
+                }
+            ]
+        },
+        {
+            "id": "All Day",
+            "message": "All Day",
+            "translation": "Den ganzen Tag"
+        },
+        {
+            "id": "New event scheduled",
+            "message": "New event scheduled",
+            "translation": "Neue Veranstaltung geplant"
+        },
+        {
+            "id": "Event has been cancelled",
+            "message": "Event has been cancelled",
+            "translation": "Veranstaltung wurde abgesagt"
+        },
+        {
+            "id": "Updated",
+            "message": "Updated",
+            "translation": "Aktualisiert"
+        },
+        {
+            "id": "Duration",
+            "message": "Duration",
+            "translation": "Dauer"
+        },
+        {
+            "id": "Scheduled for",
+            "message": "Scheduled for",
+            "translation": "Eingetragen für"
+        },
+        {
+            "id": "Starting",
+            "message": "Starting",
+            "translation": "Beginn"
+        }
+    ]
+}

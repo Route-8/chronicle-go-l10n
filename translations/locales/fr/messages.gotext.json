@@ -1,0 +1,20 @@
+{
+    "language": "fr",
+    "messages": [
+        {
+            "id": "Events for the next {Days} days",
+            "message": "Events for the next {Days} days",
+            "translation": "Événements des {Days} prochains jours",
+            "placeholders": [
+                {
+                    "id": "Days",
+                    "string": "%[1]d",
+                    "type": "int",
+                    "underlyingType": "int",
+                    "argNum": 1,
+                    "expr": "eventSummary.Days"
+                }
+            ]
+        }
+    ]
+}
