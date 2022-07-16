@@ -131,9 +131,9 @@
       "fuzzy": true
     },
     {
-      "id": "{Name} has deleted a notifier which connected this channel to an external calendar",
-      "message": "{Name} has deleted a notifier which connected this channel to an external calendar",
-      "translation": "{Name} has deleted a notifier which connected this channel to an external calendar",
+      "id": "{Name} has deleted a notifier which connected this channel to an external calendar.",
+      "message": "{Name} has deleted a notifier which connected this channel to an external calendar.",
+      "translation": "{Name} has deleted a notifier which connected this channel to an external calendar.",
       "translatorComment": "Copied from source.",
       "placeholders": [
         {
@@ -179,6 +179,20 @@
       "id": "All Day",
       "message": "All Day",
       "translation": "All Day",
+      "translatorComment": "Copied from source.",
+      "fuzzy": true
+    },
+    {
+      "id": "New event scheduled",
+      "message": "New event scheduled",
+      "translation": "New event scheduled",
+      "translatorComment": "Copied from source.",
+      "fuzzy": true
+    },
+    {
+      "id": "Event has been cancelled",
+      "message": "Event has been cancelled",
+      "translation": "Event has been cancelled",
       "translatorComment": "Copied from source.",
       "fuzzy": true
     },
