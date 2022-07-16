@@ -119,10 +119,10 @@ var frIndex = []uint32{ // 15 elements
 	0x00000000, 0x0000000b, 0x00000029, 0x0000004c,
 	0x00000071, 0x000000c0, 0x00000114, 0x00000169,
 	0x0000017b, 0x00000199, 0x000001b7, 0x000001c2,
-	0x000001c9, 0x000001d8, 0x000001e0,
+	0x000001c9, 0x000001d8, 0x000001e1,
 } // Size: 84 bytes
 
-const frData string = "" + // Size: 480 bytes
+const frData string = "" + // Size: 481 bytes
 	"\x02%[1]d mois\x14\x01\x81\x01\x00=\x01\x08\x02Un jour\x00\x0c\x02%[1]d " +
 	"jours\x14\x01\x81\x01\x00=\x01\x0c\x02%[1]d heure\x00\x0d\x02%[1]d heure" +
 	"s\x14\x01\x81\x01\x00=\x01\x0d\x02%[1]d minute\x00\x0e\x02%[1]d minutes" +
@@ -131,7 +131,7 @@ const frData string = "" + // Size: 480 bytes
 	" calendrier externe.\x14\x01\x81\x01\x00=\x01\x1e\x02Les événements du l" +
 	"endemain\x00-\x02Événements pour les %[1]d\u00a0prochains jours\x02Toute" +
 	" la journée\x02Nouvel événement programmé\x02L'événement a été annulé" +
-	"\x02Actualisé\x02Durée\x02Planifié pour\x02Départ"
+	"\x02Actualisé\x02Durée\x02Planifié pour\x02Commence"
 
 var nlIndex = []uint32{ // 15 elements
 	0x00000000, 0x00000024, 0x00000044, 0x0000004e,
@@ -151,4 +151,4 @@ const nlData string = "" + // Size: 473 bytes
 	"gen\x02De hele dag\x02Nieuw evenement gepland\x02Evenement is geannuleer" +
 	"d\x02Bijgewerkt\x02Looptijd\x02Gepland voor\x02Beginnend"
 
-	// Total table size 2813 bytes (2KiB); checksum: 81649258
+	// Total table size 2814 bytes (2KiB); checksum: 4764A4DD
