@@ -26,6 +26,7 @@ var serverLangs = []language.Tag{
 	language.German,          // de
 	language.French,          // fr
 	language.Spanish,         // es
+	language.Swedish,         // sv
 	// language.Dutch,           // nl
 }
 
