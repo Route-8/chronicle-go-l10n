@@ -49,23 +49,24 @@ var messageKeyToIndex = map[string]int{
 	"%s has created a notifier which connects this channel to an external calendar.":  4,
 	"%s has deleted a notifier which connected this channel to an external calendar.": 5,
 	"All Day":                     7,
-	"Duration":                    11,
+	"Duration":                    13,
 	"Event has been cancelled":    9,
 	"Events for the next %d days": 6,
+	"Location":                    11,
 	"New event scheduled":         8,
 	"Scheduled for":               12,
-	"Starting":                    13,
+	"Starting":                    14,
 	"Updated":                     10,
 }
 
-var deIndex = []uint32{ // 15 elements
+var deIndex = []uint32{ // 16 elements
 	0x00000000, 0x00000024, 0x00000044, 0x00000069,
 	0x0000008e, 0x000000e9, 0x00000149, 0x00000177,
 	0x00000186, 0x000001a1, 0x000001be, 0x000001cb,
-	0x000001d1, 0x000001e2, 0x000001e9,
-} // Size: 84 bytes
+	0x000001dd, 0x000001ee, 0x000001f4, 0x000001fb,
+} // Size: 88 bytes
 
-const deData string = "" + // Size: 489 bytes
+const deData string = "" + // Size: 507 bytes
 	"\x14\x01\x81\x01\x00=\x01\x0c\x02%[1]d Monat\x00\x0e\x02%[1]d Monaten" +
 	"\x14\x01\x81\x01\x00=\x01\x0a\x02%[1]d Tag\x00\x0c\x02%[1]d Tagen\x14" +
 	"\x01\x81\x01\x00=\x01\x0d\x02%[1]d Stunde\x00\x0e\x02%[1]d Stunden\x14" +
@@ -74,17 +75,17 @@ const deData string = "" + // Size: 489 bytes
 	"ender verbindet.\x02%[1]s hat einen Notifier gelöscht, der diesen Kanal " +
 	"mit einem externen Kalender verbunden hat.\x02Veranstaltungen für die nä" +
 	"chsten %[1]d Tage\x02Den ganzen Tag\x02Neue Veranstaltung geplant\x02Ver" +
-	"anstaltung wurde abgesagt\x02Aktualisiert\x02Dauer\x02Eingetragen für" +
-	"\x02Beginn"
+	"anstaltung wurde abgesagt\x02Aktualisiert\x02Veranstaltungsort\x02Einget" +
+	"ragen für\x02Dauer\x02Beginn"
 
-var en_USIndex = []uint32{ // 15 elements
+var en_USIndex = []uint32{ // 16 elements
 	0x00000000, 0x00000023, 0x00000042, 0x00000063,
 	0x00000088, 0x000000da, 0x0000012d, 0x0000016e,
 	0x00000176, 0x0000018a, 0x000001a3, 0x000001ab,
-	0x000001b4, 0x000001c2, 0x000001cb,
-} // Size: 84 bytes
+	0x000001b4, 0x000001c2, 0x000001cb, 0x000001d4,
+} // Size: 88 bytes
 
-const en_USData string = "" + // Size: 459 bytes
+const en_USData string = "" + // Size: 468 bytes
 	"\x14\x01\x81\x01\x00=\x01\x0c\x02%[1]d month\x00\x0d\x02%[1]d months\x14" +
 	"\x01\x81\x01\x00=\x01\x0a\x02%[1]d day\x00\x0b\x02%[1]d days\x14\x01\x81" +
 	"\x01\x00=\x01\x0b\x02%[1]d hour\x00\x0c\x02%[1]d hours\x14\x01\x81\x01" +
@@ -93,17 +94,17 @@ const en_USData string = "" + // Size: 459 bytes
 	"[1]s has deleted a notifier which connected this channel to an external " +
 	"calendar.\x14\x01\x81\x01\x00=\x01\x18\x02Events for the next day\x00" +
 	"\x1f\x02Events for the next %[1]d days\x02All Day\x02New event scheduled" +
-	"\x02Event has been cancelled\x02Updated\x02Duration\x02Scheduled for\x02" +
-	"Starting"
+	"\x02Event has been cancelled\x02Updated\x02Location\x02Scheduled for\x02" +
+	"Duration\x02Starting"
 
-var esIndex = []uint32{ // 15 elements
+var esIndex = []uint32{ // 16 elements
 	0x00000000, 0x00000020, 0x00000041, 0x00000062,
 	0x00000087, 0x000000d7, 0x0000012b, 0x0000017b,
 	0x00000187, 0x0000019f, 0x000001bb, 0x000001c7,
-	0x000001d1, 0x000001e1, 0x000001ec,
-} // Size: 84 bytes
+	0x000001d2, 0x000001e2, 0x000001ec, 0x000001f7,
+} // Size: 88 bytes
 
-const esData string = "" + // Size: 492 bytes
+const esData string = "" + // Size: 503 bytes
 	"\x14\x01\x81\x01\x00=\x01\x0a\x02%[1]d mes\x00\x0c\x02%[1]d meses\x14" +
 	"\x01\x81\x01\x00=\x01\x0b\x02%[1]d día\x00\x0c\x02%[1]d días\x14\x01\x81" +
 	"\x01\x00=\x01\x0b\x02%[1]d hora\x00\x0c\x02%[1]d horas\x14\x01\x81\x01" +
@@ -112,17 +113,17 @@ const esData string = "" + // Size: 492 bytes
 	"]s ha eliminado un notificador que conectaba este canal a un calendario " +
 	"externo.\x14\x01\x81\x01\x00=\x01\x1f\x02Eventos para el día siguiente" +
 	"\x00'\x02Eventos para los próximos %[1]d días\x02Todo el dia\x02Nuevo ev" +
-	"ento programado\x02El evento ha sido cancelado\x02Actualizado\x02Duració" +
-	"n\x02Programado para\x02Comenzando"
+	"ento programado\x02El evento ha sido cancelado\x02Actualizado\x02Ubicaci" +
+	"ón\x02Programado para\x02Duración\x02Comenzando"
 
-var frIndex = []uint32{ // 15 elements
+var frIndex = []uint32{ // 16 elements
 	0x00000000, 0x0000000b, 0x00000029, 0x0000004c,
 	0x00000071, 0x000000c0, 0x00000114, 0x00000169,
 	0x0000017b, 0x00000199, 0x000001b7, 0x000001c2,
-	0x000001c9, 0x000001d8, 0x000001e1,
-} // Size: 84 bytes
+	0x000001ce, 0x000001dd, 0x000001e4, 0x000001ed,
+} // Size: 88 bytes
 
-const frData string = "" + // Size: 481 bytes
+const frData string = "" + // Size: 493 bytes
 	"\x02%[1]d mois\x14\x01\x81\x01\x00=\x01\x08\x02Un jour\x00\x0c\x02%[1]d " +
 	"jours\x14\x01\x81\x01\x00=\x01\x0c\x02%[1]d heure\x00\x0d\x02%[1]d heure" +
 	"s\x14\x01\x81\x01\x00=\x01\x0d\x02%[1]d minute\x00\x0e\x02%[1]d minutes" +
@@ -131,16 +132,16 @@ const frData string = "" + // Size: 481 bytes
 	" calendrier externe.\x14\x01\x81\x01\x00=\x01\x1e\x02Les événements du l" +
 	"endemain\x00-\x02Événements pour les %[1]d\u00a0prochains jours\x02Toute" +
 	" la journée\x02Nouvel événement programmé\x02L'événement a été annulé" +
-	"\x02Actualisé\x02Durée\x02Planifié pour\x02Commence"
+	"\x02Actualisé\x02Emplacement\x02Planifié pour\x02Durée\x02Commence"
 
-var nlIndex = []uint32{ // 15 elements
+var nlIndex = []uint32{ // 16 elements
 	0x00000000, 0x00000024, 0x00000044, 0x0000004e,
 	0x00000073, 0x000000c3, 0x0000011e, 0x00000171,
 	0x0000017d, 0x00000195, 0x000001ae, 0x000001b9,
-	0x000001c2, 0x000001cf, 0x000001d9,
-} // Size: 84 bytes
+	0x000001c0, 0x000001cd, 0x000001d6, 0x000001e0,
+} // Size: 88 bytes
 
-const nlData string = "" + // Size: 473 bytes
+const nlData string = "" + // Size: 480 bytes
 	"\x14\x01\x81\x01\x00=\x01\x0c\x02%[1]d maand\x00\x0e\x02%[1]d maanden" +
 	"\x14\x01\x81\x01\x00=\x01\x0a\x02%[1]d dag\x00\x0c\x02%[1]d dagen\x02%[1" +
 	"]d uur\x14\x01\x81\x01\x00=\x01\x0d\x02%[1]d minuut\x00\x0e\x02%[1]d min" +
@@ -149,6 +150,6 @@ const nlData string = "" + // Size: 473 bytes
 	"eft gekoppeld aan een externe agenda.\x14\x01\x81\x01\x00=\x01!\x02Evene" +
 	"menten voor de volgende dag\x00(\x02Evenementen voor de komende %[1]d da" +
 	"gen\x02De hele dag\x02Nieuw evenement gepland\x02Evenement is geannuleer" +
-	"d\x02Bijgewerkt\x02Looptijd\x02Gepland voor\x02Beginnend"
+	"d\x02Bijgewerkt\x02Plaats\x02Gepland voor\x02Looptijd\x02Beginnend"
 
-	// Total table size 2814 bytes (2KiB); checksum: 4764A4DD
+	// Total table size 2891 bytes (2KiB); checksum: BF9D9C2A

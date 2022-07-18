@@ -192,14 +192,19 @@
             "translation": "Actualizado"
         },
         {
-            "id": "Duration",
-            "message": "Duration",
-            "translation": "Duración"
+            "id": "Location",
+            "message": "Location",
+            "translation": "Ubicación"
         },
         {
             "id": "Scheduled for",
             "message": "Scheduled for",
             "translation": "Programado para"
+        },
+        {
+            "id": "Duration",
+            "message": "Duration",
+            "translation": "Duración"
         },
         {
             "id": "Starting",

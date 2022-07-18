@@ -204,9 +204,9 @@
       "fuzzy": true
     },
     {
-      "id": "Duration",
-      "message": "Duration",
-      "translation": "Duration",
+      "id": "Location",
+      "message": "Location",
+      "translation": "Location",
       "translatorComment": "Copied from source.",
       "fuzzy": true
     },
@@ -214,6 +214,13 @@
       "id": "Scheduled for",
       "message": "Scheduled for",
       "translation": "Scheduled for",
+      "translatorComment": "Copied from source.",
+      "fuzzy": true
+    },
+    {
+      "id": "Duration",
+      "message": "Duration",
+      "translation": "Duration",
       "translatorComment": "Copied from source.",
       "fuzzy": true
     },

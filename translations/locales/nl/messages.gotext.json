@@ -179,14 +179,19 @@
             "translation": "Bijgewerkt"
         },
         {
-            "id": "Duration",
-            "message": "Duration",
-            "translation": "Looptijd"
+            "id": "Location",
+            "message": "Location",
+            "translation": "Plaats"
         },
         {
             "id": "Scheduled for",
             "message": "Scheduled for",
             "translation": "Gepland voor"
+        },
+        {
+            "id": "Duration",
+            "message": "Duration",
+            "translation": "Looptijd"
         },
         {
             "id": "Starting",

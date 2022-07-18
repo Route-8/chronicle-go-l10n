@@ -179,14 +179,19 @@
             "translation": "Aktualisiert"
         },
         {
-            "id": "Duration",
-            "message": "Duration",
-            "translation": "Dauer"
+            "id": "Location",
+            "message": "Location",
+            "translation": "Veranstaltungsort"
         },
         {
             "id": "Scheduled for",
             "message": "Scheduled for",
             "translation": "Eingetragen für"
+        },
+        {
+            "id": "Duration",
+            "message": "Duration",
+            "translation": "Dauer"
         },
         {
             "id": "Starting",
