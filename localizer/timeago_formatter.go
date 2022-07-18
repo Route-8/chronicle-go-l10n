@@ -12,6 +12,7 @@ var timeagoConfigMappings = map[language.Tag]timeago.Config{
 	language.German:          timeago.German,
 	language.French:          timeago.French,
 	language.Spanish:         timeago.Spanish,
+	language.Swedish:         timeagoSwedishConfig,
 	// language.Dutch:           timeago.,
 }
 

@@ -12,6 +12,7 @@ var mondayDateMappings = map[language.Tag]string{
 	language.German:          monday.LocaleDeDE,
 	language.French:          monday.LocaleFrFR,
 	language.Spanish:         monday.LocaleEsES,
+	language.Swedish:         monday.LocaleSvSE,
 	// language.Dutch:           monday.LocaleNlNL,
 }
 

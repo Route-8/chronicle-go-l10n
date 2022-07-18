@@ -32,6 +32,7 @@ func init() {
 		"es":    &dictionary{index: esIndex, data: esData},
 		"fr":    &dictionary{index: frIndex, data: frData},
 		"nl":    &dictionary{index: nlIndex, data: nlData},
+		"sv":    &dictionary{index: svIndex, data: svData},
 	}
 	fallback := language.MustParse("en-US")
 	cat, err := catalog.NewFromMap(dict, catalog.Fallback(fallback))
@@ -152,4 +153,22 @@ const nlData string = "" + // Size: 480 bytes
 	"gen\x02De hele dag\x02Nieuw evenement gepland\x02Evenement is geannuleer" +
 	"d\x02Bijgewerkt\x02Plaats\x02Gepland voor\x02Looptijd\x02Beginnend"
 
-	// Total table size 2891 bytes (2KiB); checksum: BF9D9C2A
+var svIndex = []uint32{ // 16 elements
+	0x00000000, 0x00000026, 0x00000046, 0x00000069,
+	0x0000008d, 0x000000e0, 0x00000137, 0x00000157,
+	0x00000162, 0x00000178, 0x00000193, 0x0000019e,
+	0x000001a4, 0x000001ad, 0x000001b4, 0x000001bc,
+} // Size: 88 bytes
+
+const svData string = "" + // Size: 444 bytes
+	"\x14\x01\x81\x01\x00=\x01\x0d\x02%[1]d Månad\x00\x0f\x02%[1]d Månader" +
+	"\x14\x01\x81\x01\x00=\x01\x0a\x02%[1]d Dag\x00\x0c\x02%[1]d Dagar\x14" +
+	"\x01\x81\x01\x00=\x01\x0c\x02%[1]d Timme\x00\x0d\x02%[1]d Timmar\x14\x01" +
+	"\x81\x01\x00=\x01\x0c\x02%[1]d Minut\x00\x0e\x02%[1]d Minuter\x02%[1]s h" +
+	"ar skapat en notifier som kopplar den här kanalen till en extern kalende" +
+	"r.\x02%[1]s har tagit bort en notifier som kopplar den här kanaler till " +
+	"en extern kalender.\x02Event de kommande %[1]d dagarna\x02Hela dagen\x02" +
+	"Nytt event schemalagt\x02Event har blivit inställt\x02Uppdaterad\x02Plat" +
+	"s\x02Starttid\x02Längd\x02Börjar"
+
+	// Total table size 3423 bytes (3KiB); checksum: F15B7FEA
