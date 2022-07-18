@@ -11,7 +11,11 @@ At the moment the following locales are supported:
 - Spanish
 - French
 
-There locale files can be found under [/translations/locales](https://github.com/Route-8/chronicle-go-l10n/tree/main/translations/locales)
+The locale files can be found under [/translations/locales/](https://github.com/Route-8/chronicle-go-l10n/tree/main/translations/locales)
+
+### Translation Updates or Corrections
+
+If you have any suggested updates or corrections for existing translations we would be happy for your help. You are welcome to create a pull request, an issue, or reach out to us on our [Discord Support sever](https://discord.gg/nWJCsV9hPq).
 
 ### Adding a New Locale
 
