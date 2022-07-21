@@ -7,9 +7,9 @@ import (
 )
 
 var timeagoSwedishConfig = timeago.Config{
-	PastPrefix:   "",
+	PastPrefix:   "för ",
 	PastSuffix:   " sedan",
-	FuturePrefix: "på ",
+	FuturePrefix: "om ",
 	FutureSuffix: "",
 
 	Periods: []timeago.FormatPeriod{
@@ -17,11 +17,11 @@ var timeagoSwedishConfig = timeago.Config{
 		{D: time.Minute, One: "en minut", Many: "%d minuter"},
 		{D: time.Hour, One: "en timme", Many: "%d timmar"},
 		{D: timeago.Day, One: "en dag", Many: "%d dagar"},
-		{D: timeago.Month, One: "en månad", Many: "%d månad"},
+		{D: timeago.Month, One: "en månad", Many: "%d månader"},
 		{D: timeago.Year, One: "ett år", Many: "%d år"},
 	},
 
-	Zero:          "",
+	Zero:          "en sekund",
 	Max:           30 * 24 * time.Hour,
 	DefaultLayout: "2006-01-02",
 }
