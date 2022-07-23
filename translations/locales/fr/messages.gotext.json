@@ -159,6 +159,11 @@
             ]
         },
         {
+            "id": "No events scheduled",
+            "message": "No events scheduled",
+            "translation": "Aucun événement prévu"
+        },
+        {
             "id": "All Day",
             "message": "All Day",
             "translation": "Toute la journée"
