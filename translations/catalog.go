@@ -32,6 +32,7 @@ func init() {
 		"es":    &dictionary{index: esIndex, data: esData},
 		"fr":    &dictionary{index: frIndex, data: frData},
 		"nl":    &dictionary{index: nlIndex, data: nlData},
+		"pt":    &dictionary{index: ptIndex, data: ptData},
 		"sv":    &dictionary{index: svIndex, data: svData},
 	}
 	fallback := language.MustParse("en-US")
@@ -162,6 +163,26 @@ const nlData string = "" + // Size: 505 bytes
 	"d\x02Evenement is geannuleerd\x02Bijgewerkt\x02Plaats\x02Gepland voor" +
 	"\x02Looptijd\x02Beginnend"
 
+var ptIndex = []uint32{ // 17 elements
+	0x00000000, 0x00000021, 0x00000040, 0x00000061,
+	0x00000086, 0x000000d7, 0x0000012b, 0x0000016e,
+	0x00000186, 0x00000191, 0x000001a8, 0x000001bf,
+	0x000001ca, 0x000001d0, 0x000001e0, 0x000001ea,
+	0x000001f5,
+} // Size: 92 bytes
+
+const ptData string = "" + // Size: 501 bytes
+	"\x14\x01\x81\x01\x00=\x01\x0b\x02%[1]d mês\x00\x0c\x02%[1]d meses\x14" +
+	"\x01\x81\x01\x00=\x01\x0a\x02%[1]d dia\x00\x0b\x02%[1]d dias\x14\x01\x81" +
+	"\x01\x00=\x01\x0b\x02%[1]d hora\x00\x0c\x02%[1]d horas\x14\x01\x81\x01" +
+	"\x00=\x01\x0d\x02%[1]d minuto\x00\x0e\x02%[1]d minutos\x02%[1]s ha cread" +
+	"o un notificador que conecta este canal con un calendario externo.\x02%[" +
+	"1]s ha eliminado un notificador que conectaba este canal a un calendario" +
+	" externo.\x14\x01\x81\x01\x00=\x01\x18\x02Eventos no dia seguinte\x00!" +
+	"\x02Eventos nos próximos %[1]d dias\x02Sem eventos programados\x02Todo o" +
+	" dia\x02Novo evento programado\x02O evento foi cancelado\x02Atualizado" +
+	"\x02Local\x02Programado para\x02Duração\x02A começar"
+
 var svIndex = []uint32{ // 17 elements
 	0x00000000, 0x00000026, 0x00000046, 0x00000069,
 	0x0000008d, 0x000000e0, 0x00000137, 0x00000157,
@@ -181,4 +202,4 @@ const svData string = "" + // Size: 469 bytes
 	" planerade\x02Hela dagen\x02Nytt event schemalagt\x02Event har blivit in" +
 	"ställt\x02Uppdaterad\x02Plats\x02Starttid\x02Längd\x02Börjar"
 
-	// Total table size 3599 bytes (3KiB); checksum: 7BAB514D
+	// Total table size 4192 bytes (4KiB); checksum: 1841D96A

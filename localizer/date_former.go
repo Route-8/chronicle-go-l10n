@@ -13,7 +13,7 @@ var mondayDateMappings = map[language.Tag]string{
 	language.French:          monday.LocaleFrFR,
 	language.Spanish:         monday.LocaleEsES,
 	language.Swedish:         monday.LocaleSvSE,
-	// language.Dutch:           monday.LocaleNlNL,
+	language.Portuguese:      monday.LocalePtPT,
 }
 
 func (l *Localizer) FormatDate(date time.Time) string {
