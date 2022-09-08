@@ -14,6 +14,7 @@ var timeagoConfigMappings = map[language.Tag]timeago.Config{
 	language.Spanish:         timeago.Spanish,
 	language.Swedish:         timeagoSwedishConfig,
 	language.Portuguese:      timeago.Portuguese,
+	language.Japanese:        timeagoJapaneseConfig,
 }
 
 func (l *Localizer) TimeAgo(date time.Time) string {
