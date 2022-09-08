@@ -186,7 +186,7 @@
     {
       "id": "Location",
       "message": "Location",
-      "translation": "開催場所"
+      "translation": "場所"
     },
     {
       "id": "Scheduled for",
@@ -201,7 +201,7 @@
     {
       "id": "Starting",
       "message": "Starting",
-      "translation": "開催まであと"
+      "translation": "開催"
     }
   ]
 }

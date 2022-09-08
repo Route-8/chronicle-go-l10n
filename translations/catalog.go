@@ -147,18 +147,18 @@ const frData string = "" + // Size: 518 bytes
 var jaIndex = []uint32{ // 17 elements
 	0x00000000, 0x00000022, 0x0000003e, 0x00000060,
 	0x0000007c, 0x000000eb, 0x00000142, 0x00000163,
-	0x0000019a, 0x000001a1, 0x000001ae, 0x000001cd,
-	0x000001f8, 0x000001ff, 0x00000206, 0x0000020d,
-	0x00000217,
+	0x0000019a, 0x000001a1, 0x000001a8, 0x000001c7,
+	0x000001f2, 0x000001f9, 0x00000200, 0x00000207,
+	0x0000020e,
 } // Size: 92 bytes
 
-const jaData string = "" + // Size: 535 bytes
+const jaData string = "" + // Size: 526 bytes
 	"\x14\x01\x81\x01\x00=\x01\x0c\x02%[1]dヵ月\x00\x0c\x02%[1]dヵ月\x14\x01\x81" +
 	"\x01\x00=\x01\x09\x02%[1]d日\x00\x09\x02%[1]d日\x14\x01\x81\x01\x00=\x01" +
 	"\x0c\x02%[1]d時間\x00\x0c\x02%[1]d時間\x14\x01\x81\x01\x00=\x01\x09\x02%[1]d" +
 	"分\x00\x09\x02%[1]d分\x02%[1]sはこちらを接続したカレンダーの通知を行うチャンネルとして設定しました。\x02%[1" +
 	"]sはこちらをカレンダーの通知チャンネルから削除しました。\x02%[1]d日間のイベント情報\x02予定されているイベントはありません。" +
-	"\x02終日\x02開催場所\x02新しいイベントを企画\x02イベントは中止となりました。\x02更新\x02予定\x02期間\x02開催中"
+	"\x02終日\x02場所\x02新しいイベントを企画\x02イベントは中止となりました。\x02更新\x02日時\x02期間\x02開催"
 
 var nlIndex = []uint32{ // 17 elements
 	0x00000000, 0x00000024, 0x00000044, 0x0000004e,
@@ -219,4 +219,4 @@ const svData string = "" + // Size: 469 bytes
 	" planerade\x02Hela dagen\x02Plats\x02Nytt event schemalagt\x02Event har " +
 	"blivit inställt\x02Uppdaterad\x02Starttid\x02Längd\x02Börjar"
 
-	// Total table size 4819 bytes (4KiB); checksum: F3CB2AD7
+	// Total table size 4810 bytes (4KiB); checksum: DCC76F38
