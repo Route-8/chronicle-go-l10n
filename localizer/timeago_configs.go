@@ -28,9 +28,9 @@ var timeagoSwedishConfig = timeago.Config{
 
 var timeagoJapaneseConfig = timeago.Config{
 	PastPrefix:   "",
-	PastSuffix:   "前",
+	PastSuffix:   "経過",
 	FuturePrefix: "",
-	FutureSuffix: "で",
+	FutureSuffix: "前",
 
 	Periods: []timeago.FormatPeriod{
 		{D: time.Second, One: "1秒", Many: "%d秒"},
@@ -41,7 +41,7 @@ var timeagoJapaneseConfig = timeago.Config{
 		{D: timeago.Year, One: "1年", Many: "%d年"},
 	},
 
-	Zero:          "今",
+	Zero:          "中",
 	Max:           30 * 24 * time.Hour,
 	DefaultLayout: "2006-01-02",
 }

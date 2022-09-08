@@ -191,7 +191,7 @@
     {
       "id": "Scheduled for",
       "message": "Scheduled for",
-      "translation": "予定"
+      "translation": "日時"
     },
     {
       "id": "Duration",
@@ -201,7 +201,7 @@
     {
       "id": "Starting",
       "message": "Starting",
-      "translation": "開催中"
+      "translation": "開催まであと"
     }
   ]
 }
