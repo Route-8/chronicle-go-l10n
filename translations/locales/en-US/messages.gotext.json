@@ -155,6 +155,9 @@
           "feature": "plural",
           "arg": "Days",
           "cases": {
+            "=0": {
+              "msg": "Today's Events"
+            },
             "=1": {
               "msg": "Events for the next day"
             },
