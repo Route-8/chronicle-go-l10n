@@ -31,6 +31,7 @@ func init() {
 		"en_US": &dictionary{index: en_USIndex, data: en_USData},
 		"es":    &dictionary{index: esIndex, data: esData},
 		"fr":    &dictionary{index: frIndex, data: frData},
+		"hu":    &dictionary{index: huIndex, data: huData},
 		"ja":    &dictionary{index: jaIndex, data: jaData},
 		"nl":    &dictionary{index: nlIndex, data: nlData},
 		"pt":    &dictionary{index: ptIndex, data: ptData},
@@ -144,6 +145,25 @@ const frData string = "" + // Size: 518 bytes
 	"événement a été annulé\x02Actualisé\x02Emplacement\x02Planifié pour\x02" +
 	"Durée\x02Commence"
 
+var huIndex = []uint32{ // 17 elements
+	0x00000000, 0x00000024, 0x00000042, 0x00000062,
+	0x00000082, 0x000000e2, 0x00000142, 0x00000165,
+	0x00000187, 0x00000192, 0x000001ac, 0x000001c5,
+	0x000001d0, 0x000001da, 0x000001e7, 0x000001f2,
+	0x000001fa,
+} // Size: 92 bytes
+
+const huData string = "" + // Size: 506 bytes
+	"\x14\x01\x81\x01\x00=\x01\x0d\x02%[1]d hónap\x00\x0d\x02%[1]d hónap\x14" +
+	"\x01\x81\x01\x00=\x01\x0a\x02%[1]d nap\x00\x0a\x02%[1]d nap\x14\x01\x81" +
+	"\x01\x00=\x01\x0b\x02%[1]d óra\x00\x0b\x02%[1]d óra\x14\x01\x81\x01\x00=" +
+	"\x01\x0b\x02%[1]d perc\x00\x0b\x02%[1]d perc\x02%[1]s létrehozott egy ér" +
+	"tesítőt, amely összeköti ezt a csatornát egy külső naptárral.\x02%[1]s t" +
+	"örölt egy értesítőt, amely összekötötte ezt a csatornát egy külső naptá" +
+	"rral.\x02A következő %[1]d nap eseményei\x02Nincsenek előjegyzett esemén" +
+	"yek\x02Egész nap\x02Új esemény előjegyezve\x02Az eseményt törölték\x02Fr" +
+	"issítve\x02Helyszín\x02Előjegyezve\x02Időtartam\x02Kezdés"
+
 var jaIndex = []uint32{ // 17 elements
 	0x00000000, 0x00000022, 0x0000003e, 0x00000060,
 	0x0000007c, 0x000000eb, 0x00000142, 0x00000163,
@@ -219,4 +239,4 @@ const svData string = "" + // Size: 469 bytes
 	" planerade\x02Hela dagen\x02Nytt event schemalagt\x02Event har blivit in" +
 	"ställt\x02Uppdaterad\x02Plats\x02Starttid\x02Längd\x02Börjar"
 
-	// Total table size 4828 bytes (4KiB); checksum: 8618A7C7
+	// Total table size 5426 bytes (5KiB); checksum: DEED25FD

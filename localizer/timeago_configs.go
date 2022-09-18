@@ -45,3 +45,23 @@ var timeagoJapaneseConfig = timeago.Config{
 	Max:           30 * 24 * time.Hour,
 	DefaultLayout: "2006-01-02",
 }
+
+var timeagoHungarianConfig = timeago.Config{
+	PastPrefix:   "",
+	PastSuffix:   " telt el azóta",
+	FuturePrefix: "",
+	FutureSuffix: " múlva",
+
+	Periods: []timeago.FormatPeriod{
+		{D: time.Second, One: "egy másodperc", Many: "%d másodperc"},
+		{D: time.Minute, One: "egy perc", Many: "%d perc"},
+		{D: time.Hour, One: "egy óra", Many: "%d óra"},
+		{D: timeago.Day, One: "egy nap", Many: "%d nap"},
+		{D: timeago.Month, One: "egy hónap", Many: "%d hónap"},
+		{D: timeago.Year, One: "egy év", Many: "%d év"},
+	},
+
+	Zero:          "most",
+	Max:           30 * 24 * time.Hour,
+	DefaultLayout: "2006-01-02",
+}
