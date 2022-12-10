@@ -30,6 +30,7 @@ var serverLangs = []language.Tag{
 	language.Portuguese,      // pt
 	language.Japanese,        // ja
 	language.Hungarian,       // hu
+	language.Russian,         // ru
 }
 
 // Define a Localizer type which stores the relevant locale ID (as used

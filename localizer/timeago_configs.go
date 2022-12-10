@@ -65,3 +65,23 @@ var timeagoHungarianConfig = timeago.Config{
 	Max:           30 * 24 * time.Hour,
 	DefaultLayout: "2006-01-02",
 }
+
+var timeagoRussianConfig = timeago.Config{
+	PastPrefix:   "",
+	PastSuffix:   " назад",
+	FuturePrefix: "через ",
+	FutureSuffix: "",
+
+	Periods: []timeago.FormatPeriod{
+		{D: time.Second, One: "одна секунда", Many: "%d секунд"},
+		{D: time.Minute, One: "одна минута", Many: "%d минут"},
+		{D: time.Hour, One: "один час", Many: "%d часов"},
+		{D: timeago.Day, One: "один день", Many: "%d дней"},
+		{D: timeago.Month, One: "один месяц", Many: "%d месяцев"},
+		{D: timeago.Year, One: "один год", Many: "%d лет"},
+	},
+
+	Zero:          "ныне",
+	Max:           30 * 24 * time.Hour,
+	DefaultLayout: "2006-01-02",
+}

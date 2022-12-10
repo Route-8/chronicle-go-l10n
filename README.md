@@ -14,6 +14,7 @@ At the moment the following locales are supported:
 - Portuguese (thanks to Ghost_97)
 - Japanese (thanks to kagesya)
 - Hungarian (thanks to Arcsibald)
+- Russian (thanks to ChickenDuk [Любомир])
 
 The locale files can be found under [/translations/locales/](https://github.com/Route-8/chronicle-go-l10n/tree/main/translations/locales)
 
