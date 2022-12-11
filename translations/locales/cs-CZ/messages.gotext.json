@@ -1,0 +1,243 @@
+{
+    "language": "cs-CZ",
+    "messages": [
+        {
+            "id": "{Months} months",
+            "message": "{Months} months",
+            "translation": {
+                "select": {
+                    "feature": "plural",
+                    "arg": "Months",
+                    "cases": {
+                        "=1": {
+                            "msg": "{Months} měsíc"
+                        },
+                        "=2" :{
+                            "msg": "{Months} měsíce"
+                        },
+                        "=3" :{
+                            "msg": "{Months} měsíce"
+                        },
+                        "=4" :{
+                            "msg": "{Months} měsíce"
+                        },
+                        "other": {
+                            "msg": "{Months} měsíců"
+                        }
+                    }
+                }
+            },
+            "placeholders": [
+                {
+                    "id": "Months",
+                    "string": "%[1]d",
+                    "type": "int",
+                    "underlyingType": "int",
+                    "argNum": 1,
+                    "expr": "counter.Months"
+                }
+            ]
+        },
+        {
+            "id": "{Days} days",
+            "message": "{Days} days",
+            "translation": {
+                "select": {
+                    "feature": "plural",
+                    "arg": "Days",
+                    "cases": {
+                        "=1": {
+                            "msg": "{Days} den"
+                        },
+                        "=2": {
+                            "msg": "{Days} dny"
+                        },
+                        "=3": {
+                            "msg": "{Days} dny"
+                        },
+                        "=4": {
+                            "msg": "{Days} dny"
+                        },
+                        "other": {
+                            "msg": "{Days} dnů"
+                        }
+                    }
+                }
+            },
+            "placeholders": [
+                {
+                    "id": "Days",
+                    "string": "%[1]d",
+                    "type": "int",
+                    "underlyingType": "int",
+                    "argNum": 1,
+                    "expr": "counter.Days"
+                }
+            ]
+        },
+        {
+            "id": "{Hours} hours",
+            "message": "{Hours} hours",
+            "translation": {
+                "select": {
+                    "feature": "plural",
+                    "arg": "Hours",
+                    "cases": {
+                        "=1": {
+                            "msg": "{Hours} hodina"
+                        },
+                        "=2": {
+                            "msg": "{Hours} hodiny"
+                        },
+                        "=3": {
+                            "msg": "{Hours} hodiny"
+                        },
+                        "=4": {
+                            "msg": "{Hours} hodiny"
+                        },
+                        "other": {
+                            "msg": "{Hours} hodin"
+                        }
+                    }
+                }
+            },
+            "placeholders": [
+                {
+                    "id": "Hours",
+                    "string": "%[1]d",
+                    "type": "int",
+                    "underlyingType": "int",
+                    "argNum": 1,
+                    "expr": "counter.Hours"
+                }
+            ]
+        },
+        {
+            "id": "{Minutes} minutes",
+            "message": "{Minutes} minutes",
+            "translation": {
+                "select": {
+                    "feature": "plural",
+                    "arg": "Minutes",
+                    "cases": {
+                        "=1": {
+                            "msg": "{Minutes} minuta"
+                        },
+                        "=2": {
+                            "msg":"{Minutes} minuty"
+                        },
+                        "=3": {
+                            "msg":"{Minutes} minuty"
+                        },
+                        "=4": {
+                            "msg":"{Minutes} minuty"
+                        },
+                        "other": {
+                            "msg": "{Minutes} minut"
+                        }
+                    }
+                }
+            },
+            "placeholders": [
+                {
+                    "id": "Minutes",
+                    "string": "%[1]d",
+                    "type": "int",
+                    "underlyingType": "int",
+                    "argNum": 1,
+                    "expr": "counter.Minutes"
+                }
+            ]
+        },
+        {
+            "id": "{Name} has created a notifier which connects this channel to an external calendar.",
+            "message": "{Name} has created a notifier which connects this channel to an external calendar.",
+            "translation": "{Name} vytvořil notifikátor, který napojuje tento kanál na externí kalendář.",
+            "placeholders": [
+                {
+                    "id": "Name",
+                    "string": "%[1]s",
+                    "type": "string",
+                    "underlyingType": "string",
+                    "argNum": 1,
+                    "expr": "user.Name"
+                }
+            ]
+        },
+        {
+            "id": "{Name} has deleted a notifier which connected this channel to an external calendar.",
+            "message": "{Name} has deleted a notifier which connected this channel to an external calendar.",
+            "translation": "{Name} zrušil notifikátor, který napojoval tento kanál na externí kalendář.",
+            "placeholders": [
+                {
+                    "id": "Name",
+                    "string": "%[1]s",
+                    "type": "string",
+                    "underlyingType": "string",
+                    "argNum": 1,
+                    "expr": "user.Name"
+                }
+            ]
+        },
+        {
+            "id": "Events for the next {Days} days",
+            "message": "Events for the next {Days} days",
+            "translation": "Akce v příštích {Days} dnech",
+            "placeholders": [
+                {
+                    "id": "Days",
+                    "string": "%[1]d",
+                    "type": "int",
+                    "underlyingType": "int",
+                    "argNum": 1,
+                    "expr": "eventSummary.Days"
+                }
+            ]
+        },
+        {
+            "id": "No events scheduled",
+            "message": "No events scheduled",
+            "translation": "Žádné naplánované události"
+        },
+        {
+            "id": "All Day",
+            "message": "All Day",
+            "translation": "Celý den"
+        },
+        {
+            "id": "New event scheduled",
+            "message": "New event scheduled",
+            "translation": "Byla naplánována nová událost"
+        },
+        {
+            "id": "Event has been cancelled",
+            "message": "Event has been cancelled",
+            "translation": "Událost byla zrušena"
+        },
+        {
+            "id": "Updated",
+            "message": "Updated",
+            "translation": "Aktualizováno"
+        },
+        {
+            "id": "Location",
+            "message": "Location",
+            "translation": "Místo konání"
+        },
+        {
+            "id": "Scheduled for",
+            "message": "Scheduled for",
+            "translation": "Naplánováno na"
+        },
+        {
+            "id": "Duration",
+            "message": "Duration",
+            "translation": "Délka trvání"
+        },
+        {
+            "id": "Starting",
+            "message": "Starting",
+            "translation": "Začátek"
+        }
+    ]
+}

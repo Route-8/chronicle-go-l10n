@@ -85,3 +85,23 @@ var timeagoRussianConfig = timeago.Config{
 	Max:           30 * 24 * time.Hour,
 	DefaultLayout: "2006-01-02",
 }
+
+var timeagoCzechConfig = timeago.Config{
+	PastPrefix:   "před ",
+	PastSuffix:   "",
+	FuturePrefix: "za ",
+	FutureSuffix: "",
+
+	Periods: []timeago.FormatPeriod{
+		{D: time.Second, One: "jedna sekunda", Many: "%d sekund"},
+		{D: time.Minute, One: "jedna minuta", Many: "%d minut"},
+		{D: time.Hour, One: "jedna hodina", Many: "%d hodin"},
+		{D: timeago.Day, One: "jednoho dne", Many: "%d dní"},
+		{D: timeago.Month, One: "jeden měsíc", Many: "%d měsíců"},
+		{D: timeago.Year, One: "jeden rok", Many: "%d let"},
+	},
+
+	Zero:          "nyní",
+	Max:           30 * 24 * time.Hour,
+	DefaultLayout: "2006-01-02",
+}

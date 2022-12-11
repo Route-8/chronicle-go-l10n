@@ -27,6 +27,7 @@ func (d *dictionary) Lookup(key string) (data string, ok bool) {
 
 func init() {
 	dict := map[string]catalog.Dictionary{
+		"cs_CZ": &dictionary{index: cs_CZIndex, data: cs_CZData},
 		"de":    &dictionary{index: deIndex, data: deData},
 		"en_US": &dictionary{index: en_USIndex, data: en_USData},
 		"es":    &dictionary{index: esIndex, data: esData},
@@ -63,6 +64,28 @@ var messageKeyToIndex = map[string]int{
 	"Starting":                    8,
 	"Updated":                     11,
 }
+
+var cs_CZIndex = []uint32{ // 16 elements
+	0x00000000, 0x0000005e, 0x000000a4, 0x000000f7,
+	0x0000014a, 0x0000019d, 0x000001ef, 0x0000020f,
+	0x00000219, 0x00000223, 0x00000245, 0x0000025c,
+	0x0000026b, 0x0000027b, 0x0000028c, 0x0000029c,
+} // Size: 88 bytes
+
+const cs_CZData string = "" + // Size: 668 bytes
+	"\x14\x01\x81\x01\x00=\x01\x0e\x02%[1]d měsíc=\x02\x0f\x02%[1]d měsíce=" +
+	"\x03\x0f\x02%[1]d měsíce=\x04\x0f\x02%[1]d měsíce\x00\x10\x02%[1]d měsíc" +
+	"ů\x14\x01\x81\x01\x00=\x01\x0a\x02%[1]d den=\x02\x0a\x02%[1]d dny=\x03" +
+	"\x0a\x02%[1]d dny=\x04\x0a\x02%[1]d dny\x00\x0b\x02%[1]d dnů\x14\x01\x81" +
+	"\x01\x00=\x01\x0d\x02%[1]d hodina=\x02\x0d\x02%[1]d hodiny=\x03\x0d\x02%" +
+	"[1]d hodiny=\x04\x0d\x02%[1]d hodiny\x00\x0c\x02%[1]d hodin\x14\x01\x81" +
+	"\x01\x00=\x01\x0d\x02%[1]d minuta=\x02\x0d\x02%[1]d minuty=\x03\x0d\x02%" +
+	"[1]d minuty=\x04\x0d\x02%[1]d minuty\x00\x0c\x02%[1]d minut\x02%[1]s vyt" +
+	"vořil notifikátor, který napojuje tento kanál na externí kalendář.\x02%[" +
+	"1]s zrušil notifikátor, který napojoval tento kanál na externí kalendář." +
+	"\x02Akce v příštích %[1]d dnech\x02Celý den\x02Začátek\x02Byla naplánová" +
+	"na nová událost\x02Událost byla zrušena\x02Aktualizováno\x02Místo konání" +
+	"\x02Naplánováno na\x02Délka trvání"
 
 var deIndex = []uint32{ // 16 elements
 	0x00000000, 0x00000024, 0x00000044, 0x00000069,
@@ -245,4 +268,4 @@ const svData string = "" + // Size: 444 bytes
 	"Börjar\x02Nytt event schemalagt\x02Event har blivit inställt\x02Uppdater" +
 	"ad\x02Plats\x02Starttid\x02Längd"
 
-	// Total table size 5933 bytes (5KiB); checksum: AAA3C31F
+	// Total table size 6689 bytes (6KiB); checksum: 2552AC02
