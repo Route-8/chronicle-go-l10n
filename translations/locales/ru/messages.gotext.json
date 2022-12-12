@@ -22,7 +22,7 @@
               "msg": "{Months} месяца"
             },
             "other": {
-              "msg": "{Months} Месяцы"
+              "msg": "{Months} месяцев"
             }
           }
         }
@@ -59,7 +59,7 @@
               "msg": "{Days} дня"
             },
             "other": {
-              "msg": "{Days} Дни"
+              "msg": "{Days} дней"
             }
           }
         }
@@ -96,7 +96,7 @@
               "msg": "{Hours} часа"
             },
             "other": {
-              "msg": "{Hours} Часы"
+              "msg": "{Hours} Часов"
             }
           }
         }
