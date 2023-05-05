@@ -48,31 +48,48 @@ func init() {
 }
 
 var messageKeyToIndex = map[string]int{
-	"%d days":    1,
-	"%d hours":   2,
-	"%d minutes": 3,
-	"%d months":  0,
-	"%s has created a notifier which connects this channel to an external calendar.":  4,
-	"%s has deleted a notifier which connected this channel to an external calendar.": 5,
-	"All Day":                     7,
-	"Duration":                    14,
-	"Event has been cancelled":    10,
-	"Events for the next %d days": 6,
-	"Location":                    12,
-	"New event scheduled":         9,
-	"Scheduled for":               13,
-	"Starting":                    8,
-	"Updated":                     11,
+	"%d days":                            1,
+	"%d future instances also cancelled": 26,
+	"%d future instances also created":   15,
+	"%d future instances also found":     18,
+	"%d future instances also updated":   22,
+	"%d hours":                           2,
+	"%d minutes":                         3,
+	"%d months":                          0,
+	"%s has created a notifier which connects this channel to an external calendar.":  9,
+	"%s has deleted a notifier which connected this channel to an external calendar.": 10,
+	"1 event cancelled":                  27,
+	"1 event created":                    16,
+	"1 event found":                      19,
+	"1 event updated":                    23,
+	"All Day":                            8,
+	"Duration":                           13,
+	"Event Updated":                      24,
+	"Event has been cancelled":           6,
+	"Events for the next %d days":        7,
+	"Location":                           11,
+	"New event found":                    20,
+	"New event scheduled":                4,
+	"New recurring event found":          17,
+	"New recurring event scheduled":      14,
+	"Recurring Event Updated":            21,
+	"Recurring event has been cancelled": 25,
+	"Scheduled for":                      12,
+	"Starting":                           5,
 }
 
-var cs_CZIndex = []uint32{ // 16 elements
+var cs_CZIndex = []uint32{ // 29 elements
 	0x00000000, 0x0000005e, 0x000000a4, 0x000000f7,
-	0x0000014a, 0x0000019d, 0x000001ef, 0x0000020f,
-	0x00000219, 0x00000223, 0x00000245, 0x0000025c,
-	0x0000026b, 0x0000027b, 0x0000028c, 0x0000029c,
-} // Size: 88 bytes
+	0x0000014a, 0x0000016c, 0x00000176, 0x0000018d,
+	0x000001ad, 0x000001b7, 0x0000020a, 0x0000025c,
+	0x0000026c, 0x0000027d, 0x0000028d, 0x0000028d,
+	0x0000028d, 0x0000028d, 0x0000028d, 0x0000028d,
+	0x0000028d, 0x0000028d, 0x0000028d, 0x0000028d,
+	0x0000028d, 0x0000028d, 0x0000028d, 0x0000028d,
+	0x0000028d,
+} // Size: 140 bytes
 
-const cs_CZData string = "" + // Size: 668 bytes
+const cs_CZData string = "" + // Size: 653 bytes
 	"\x14\x01\x81\x01\x00=\x01\x0e\x02%[1]d měsíc=\x02\x0f\x02%[1]d měsíce=" +
 	"\x03\x0f\x02%[1]d měsíce=\x04\x0f\x02%[1]d měsíce\x00\x10\x02%[1]d měsíc" +
 	"ů\x14\x01\x81\x01\x00=\x01\x0a\x02%[1]d den=\x02\x0a\x02%[1]d dny=\x03" +
@@ -80,166 +97,207 @@ const cs_CZData string = "" + // Size: 668 bytes
 	"\x01\x00=\x01\x0d\x02%[1]d hodina=\x02\x0d\x02%[1]d hodiny=\x03\x0d\x02%" +
 	"[1]d hodiny=\x04\x0d\x02%[1]d hodiny\x00\x0c\x02%[1]d hodin\x14\x01\x81" +
 	"\x01\x00=\x01\x0d\x02%[1]d minuta=\x02\x0d\x02%[1]d minuty=\x03\x0d\x02%" +
-	"[1]d minuty=\x04\x0d\x02%[1]d minuty\x00\x0c\x02%[1]d minut\x02%[1]s vyt" +
-	"vořil notifikátor, který napojuje tento kanál na externí kalendář.\x02%[" +
-	"1]s zrušil notifikátor, který napojoval tento kanál na externí kalendář." +
-	"\x02Akce v příštích %[1]d dnech\x02Celý den\x02Začátek\x02Byla naplánová" +
-	"na nová událost\x02Událost byla zrušena\x02Aktualizováno\x02Místo konání" +
-	"\x02Naplánováno na\x02Délka trvání"
+	"[1]d minuty=\x04\x0d\x02%[1]d minuty\x00\x0c\x02%[1]d minut\x02Byla napl" +
+	"ánována nová událost\x02Začátek\x02Událost byla zrušena\x02Akce v příšt" +
+	"ích %[1]d dnech\x02Celý den\x02%[1]s vytvořil notifikátor, který napoju" +
+	"je tento kanál na externí kalendář.\x02%[1]s zrušil notifikátor, který n" +
+	"apojoval tento kanál na externí kalendář.\x02Místo konání\x02Naplánováno" +
+	" na\x02Délka trvání"
 
-var deIndex = []uint32{ // 16 elements
+var deIndex = []uint32{ // 29 elements
 	0x00000000, 0x00000024, 0x00000044, 0x00000069,
-	0x0000008e, 0x000000e9, 0x00000149, 0x00000177,
-	0x00000186, 0x0000018d, 0x000001a8, 0x000001c5,
-	0x000001d2, 0x000001e4, 0x000001f5, 0x000001fb,
-} // Size: 88 bytes
+	0x0000008e, 0x000000a9, 0x000000b0, 0x000000cd,
+	0x000000fb, 0x0000010a, 0x00000165, 0x000001c5,
+	0x000001d7, 0x000001e8, 0x000001ee, 0x000001ee,
+	0x000001ee, 0x000001ee, 0x000001ee, 0x000001ee,
+	0x000001ee, 0x000001ee, 0x000001ee, 0x000001ee,
+	0x000001ee, 0x000001ee, 0x000001ee, 0x000001ee,
+	0x000001ee,
+} // Size: 140 bytes
 
-const deData string = "" + // Size: 507 bytes
+const deData string = "" + // Size: 494 bytes
 	"\x14\x01\x81\x01\x00=\x01\x0c\x02%[1]d Monat\x00\x0e\x02%[1]d Monaten" +
 	"\x14\x01\x81\x01\x00=\x01\x0a\x02%[1]d Tag\x00\x0c\x02%[1]d Tagen\x14" +
 	"\x01\x81\x01\x00=\x01\x0d\x02%[1]d Stunde\x00\x0e\x02%[1]d Stunden\x14" +
-	"\x01\x81\x01\x00=\x01\x0d\x02%[1]d Minute\x00\x0e\x02%[1]d Minuten\x02%[" +
-	"1]s hat einen Notifier erstellt, der diesen Kanal mit einem externen Kal" +
-	"ender verbindet.\x02%[1]s hat einen Notifier gelöscht, der diesen Kanal " +
-	"mit einem externen Kalender verbunden hat.\x02Veranstaltungen für die nä" +
-	"chsten %[1]d Tage\x02Den ganzen Tag\x02Beginn\x02Neue Veranstaltung gepl" +
-	"ant\x02Veranstaltung wurde abgesagt\x02Aktualisiert\x02Veranstaltungsort" +
-	"\x02Eingetragen für\x02Dauer"
+	"\x01\x81\x01\x00=\x01\x0d\x02%[1]d Minute\x00\x0e\x02%[1]d Minuten\x02Ne" +
+	"ue Veranstaltung geplant\x02Beginn\x02Veranstaltung wurde abgesagt\x02Ve" +
+	"ranstaltungen für die nächsten %[1]d Tage\x02Den ganzen Tag\x02%[1]s hat" +
+	" einen Notifier erstellt, der diesen Kanal mit einem externen Kalender v" +
+	"erbindet.\x02%[1]s hat einen Notifier gelöscht, der diesen Kanal mit ein" +
+	"em externen Kalender verbunden hat.\x02Veranstaltungsort\x02Eingetragen " +
+	"für\x02Dauer"
 
-var en_USIndex = []uint32{ // 16 elements
+var en_USIndex = []uint32{ // 29 elements
 	0x00000000, 0x00000023, 0x00000042, 0x00000063,
-	0x00000088, 0x000000da, 0x0000012d, 0x00000180,
-	0x00000188, 0x00000191, 0x000001a5, 0x000001be,
-	0x000001c6, 0x000001cf, 0x000001dd, 0x000001e6,
-} // Size: 88 bytes
+	0x00000088, 0x0000009c, 0x000000a5, 0x000000be,
+	0x00000111, 0x00000119, 0x0000016b, 0x000001be,
+	0x000001c7, 0x000001d5, 0x000001de, 0x000001fc,
+	0x00000220, 0x00000230, 0x0000024a, 0x0000026c,
+	0x0000027a, 0x0000028a, 0x000002a2, 0x000002c6,
+	0x000002d6, 0x000002e4, 0x00000307, 0x0000032d,
+	0x0000033f,
+} // Size: 140 bytes
 
-const en_USData string = "" + // Size: 486 bytes
+const en_USData string = "" + // Size: 831 bytes
 	"\x14\x01\x81\x01\x00=\x01\x0c\x02%[1]d month\x00\x0d\x02%[1]d months\x14" +
 	"\x01\x81\x01\x00=\x01\x0a\x02%[1]d day\x00\x0b\x02%[1]d days\x14\x01\x81" +
 	"\x01\x00=\x01\x0b\x02%[1]d hour\x00\x0c\x02%[1]d hours\x14\x01\x81\x01" +
-	"\x00=\x01\x0d\x02%[1]d minute\x00\x0e\x02%[1]d minutes\x02%[1]s has crea" +
-	"ted a notifier which connects this channel to an external calendar.\x02%" +
-	"[1]s has deleted a notifier which connected this channel to an external " +
-	"calendar.\x14\x01\x81\x01\x00=\x00\x0f\x02Today's Events=\x01\x18\x02Eve" +
-	"nts for the next day\x00\x1f\x02Events for the next %[1]d days\x02All Da" +
-	"y\x02Starting\x02New event scheduled\x02Event has been cancelled\x02Upda" +
-	"ted\x02Location\x02Scheduled for\x02Duration"
+	"\x00=\x01\x0d\x02%[1]d minute\x00\x0e\x02%[1]d minutes\x02New event sche" +
+	"duled\x02Starting\x02Event has been cancelled\x14\x01\x81\x01\x00=\x00" +
+	"\x0f\x02Today's Events=\x01\x18\x02Events for the next day\x00\x1f\x02Ev" +
+	"ents for the next %[1]d days\x02All Day\x02%[1]s has created a notifier " +
+	"which connects this channel to an external calendar.\x02%[1]s has delete" +
+	"d a notifier which connected this channel to an external calendar.\x02Lo" +
+	"cation\x02Scheduled for\x02Duration\x02New recurring event scheduled\x02" +
+	"%[1]d future instances also created\x021 event created\x02New recurring " +
+	"event found\x02%[1]d future instances also found\x021 event found\x02New" +
+	" event found\x02Recurring Event Updated\x02%[1]d future instances also u" +
+	"pdated\x021 event updated\x02Event Updated\x02Recurring event has been c" +
+	"ancelled\x02%[1]d future instances also cancelled\x021 event cancelled"
 
-var esIndex = []uint32{ // 16 elements
+var esIndex = []uint32{ // 29 elements
 	0x00000000, 0x00000020, 0x00000041, 0x00000062,
-	0x00000087, 0x000000d7, 0x0000012b, 0x0000017b,
-	0x00000187, 0x00000192, 0x000001aa, 0x000001c6,
-	0x000001d2, 0x000001dd, 0x000001ed, 0x000001f7,
-} // Size: 88 bytes
+	0x00000087, 0x0000009f, 0x000000aa, 0x000000c6,
+	0x00000116, 0x00000122, 0x00000172, 0x000001c6,
+	0x000001d1, 0x000001e1, 0x000001eb, 0x000001eb,
+	0x000001eb, 0x000001eb, 0x000001eb, 0x000001eb,
+	0x000001eb, 0x000001eb, 0x000001eb, 0x000001eb,
+	0x000001eb, 0x000001eb, 0x000001eb, 0x000001eb,
+	0x000001eb,
+} // Size: 140 bytes
 
-const esData string = "" + // Size: 503 bytes
+const esData string = "" + // Size: 491 bytes
 	"\x14\x01\x81\x01\x00=\x01\x0a\x02%[1]d mes\x00\x0c\x02%[1]d meses\x14" +
 	"\x01\x81\x01\x00=\x01\x0b\x02%[1]d día\x00\x0c\x02%[1]d días\x14\x01\x81" +
 	"\x01\x00=\x01\x0b\x02%[1]d hora\x00\x0c\x02%[1]d horas\x14\x01\x81\x01" +
-	"\x00=\x01\x0d\x02%[1]d minuto\x00\x0e\x02%[1]d minutos\x02%[1]s ha cread" +
-	"o un notificador que conecta este canal con un calendario externo\x02%[1" +
-	"]s ha eliminado un notificador que conectaba este canal a un calendario " +
-	"externo.\x14\x01\x81\x01\x00=\x01\x1f\x02Eventos para el día siguiente" +
-	"\x00'\x02Eventos para los próximos %[1]d días\x02Todo el dia\x02Comenzan" +
-	"do\x02Nuevo evento programado\x02El evento ha sido cancelado\x02Actualiz" +
-	"ado\x02Ubicación\x02Programado para\x02Duración"
+	"\x00=\x01\x0d\x02%[1]d minuto\x00\x0e\x02%[1]d minutos\x02Nuevo evento p" +
+	"rogramado\x02Comenzando\x02El evento ha sido cancelado\x14\x01\x81\x01" +
+	"\x00=\x01\x1f\x02Eventos para el día siguiente\x00'\x02Eventos para los " +
+	"próximos %[1]d días\x02Todo el dia\x02%[1]s ha creado un notificador que" +
+	" conecta este canal con un calendario externo\x02%[1]s ha eliminado un n" +
+	"otificador que conectaba este canal a un calendario externo.\x02Ubicació" +
+	"n\x02Programado para\x02Duración"
 
-var frIndex = []uint32{ // 16 elements
+var frIndex = []uint32{ // 29 elements
 	0x00000000, 0x0000000b, 0x00000029, 0x0000004c,
-	0x00000071, 0x000000c0, 0x00000114, 0x00000169,
-	0x0000017b, 0x00000184, 0x000001a2, 0x000001c0,
-	0x000001cb, 0x000001d7, 0x000001e6, 0x000001ed,
-} // Size: 88 bytes
+	0x00000071, 0x0000008f, 0x00000098, 0x000000b6,
+	0x0000010b, 0x0000011d, 0x0000016c, 0x000001c0,
+	0x000001cc, 0x000001db, 0x000001e2, 0x000001e2,
+	0x000001e2, 0x000001e2, 0x000001e2, 0x000001e2,
+	0x000001e2, 0x000001e2, 0x000001e2, 0x000001e2,
+	0x000001e2, 0x000001e2, 0x000001e2, 0x000001e2,
+	0x000001e2,
+} // Size: 140 bytes
 
-const frData string = "" + // Size: 493 bytes
+const frData string = "" + // Size: 482 bytes
 	"\x02%[1]d mois\x14\x01\x81\x01\x00=\x01\x08\x02Un jour\x00\x0c\x02%[1]d " +
 	"jours\x14\x01\x81\x01\x00=\x01\x0c\x02%[1]d heure\x00\x0d\x02%[1]d heure" +
 	"s\x14\x01\x81\x01\x00=\x01\x0d\x02%[1]d minute\x00\x0e\x02%[1]d minutes" +
-	"\x02%[1]s a créé un notificateur qui connecte ce canal à un calendrier e" +
-	"xterne.\x02%[1]s a supprimé un notificateur qui connectait ce canal à un" +
-	" calendrier externe.\x14\x01\x81\x01\x00=\x01\x1e\x02Les événements du l" +
-	"endemain\x00-\x02Événements pour les %[1]d\u00a0prochains jours\x02Toute" +
-	" la journée\x02Commence\x02Nouvel événement programmé\x02L'événement a é" +
-	"té annulé\x02Actualisé\x02Emplacement\x02Planifié pour\x02Durée"
+	"\x02Nouvel événement programmé\x02Commence\x02L'événement a été annulé" +
+	"\x14\x01\x81\x01\x00=\x01\x1e\x02Les événements du lendemain\x00-\x02Évé" +
+	"nements pour les %[1]d\u00a0prochains jours\x02Toute la journée\x02%[1]s" +
+	" a créé un notificateur qui connecte ce canal à un calendrier externe." +
+	"\x02%[1]s a supprimé un notificateur qui connectait ce canal à un calend" +
+	"rier externe.\x02Emplacement\x02Planifié pour\x02Durée"
 
-var huIndex = []uint32{ // 16 elements
+var huIndex = []uint32{ // 29 elements
 	0x00000000, 0x00000024, 0x00000042, 0x00000062,
-	0x00000082, 0x000000e2, 0x00000142, 0x00000165,
-	0x00000170, 0x00000178, 0x00000192, 0x000001ab,
-	0x000001b6, 0x000001c0, 0x000001cd, 0x000001d8,
-} // Size: 88 bytes
+	0x00000082, 0x0000009c, 0x000000a4, 0x000000bd,
+	0x000000e0, 0x000000eb, 0x0000014b, 0x000001ab,
+	0x000001b5, 0x000001c2, 0x000001cd, 0x000001cd,
+	0x000001cd, 0x000001cd, 0x000001cd, 0x000001cd,
+	0x000001cd, 0x000001cd, 0x000001cd, 0x000001cd,
+	0x000001cd, 0x000001cd, 0x000001cd, 0x000001cd,
+	0x000001cd,
+} // Size: 140 bytes
 
-const huData string = "" + // Size: 472 bytes
+const huData string = "" + // Size: 461 bytes
 	"\x14\x01\x81\x01\x00=\x01\x0d\x02%[1]d hónap\x00\x0d\x02%[1]d hónap\x14" +
 	"\x01\x81\x01\x00=\x01\x0a\x02%[1]d nap\x00\x0a\x02%[1]d nap\x14\x01\x81" +
 	"\x01\x00=\x01\x0b\x02%[1]d óra\x00\x0b\x02%[1]d óra\x14\x01\x81\x01\x00=" +
-	"\x01\x0b\x02%[1]d perc\x00\x0b\x02%[1]d perc\x02%[1]s létrehozott egy ér" +
-	"tesítőt, amely összeköti ezt a csatornát egy külső naptárral.\x02%[1]s t" +
-	"örölt egy értesítőt, amely összekötötte ezt a csatornát egy külső naptá" +
-	"rral.\x02A következő %[1]d nap eseményei\x02Egész nap\x02Kezdés\x02Új es" +
-	"emény előjegyezve\x02Az eseményt törölték\x02Frissítve\x02Helyszín\x02El" +
-	"őjegyezve\x02Időtartam"
+	"\x01\x0b\x02%[1]d perc\x00\x0b\x02%[1]d perc\x02Új esemény előjegyezve" +
+	"\x02Kezdés\x02Az eseményt törölték\x02A következő %[1]d nap eseményei" +
+	"\x02Egész nap\x02%[1]s létrehozott egy értesítőt, amely összeköti ezt a " +
+	"csatornát egy külső naptárral.\x02%[1]s törölt egy értesítőt, amely össz" +
+	"ekötötte ezt a csatornát egy külső naptárral.\x02Helyszín\x02Előjegyezve" +
+	"\x02Időtartam"
 
-var jaIndex = []uint32{ // 16 elements
+var jaIndex = []uint32{ // 29 elements
 	0x00000000, 0x00000022, 0x0000003e, 0x00000060,
-	0x0000007c, 0x000000eb, 0x00000142, 0x00000163,
-	0x0000016a, 0x00000171, 0x00000190, 0x000001bb,
-	0x000001c2, 0x000001c9, 0x000001d0, 0x000001d7,
-} // Size: 88 bytes
+	0x0000007c, 0x0000009b, 0x000000a2, 0x000000cd,
+	0x000000ee, 0x000000f5, 0x00000164, 0x000001bb,
+	0x000001c2, 0x000001c9, 0x000001d0, 0x000001d0,
+	0x000001d0, 0x000001d0, 0x000001d0, 0x000001d0,
+	0x000001d0, 0x000001d0, 0x000001d0, 0x000001d0,
+	0x000001d0, 0x000001d0, 0x000001d0, 0x000001d0,
+	0x000001d0,
+} // Size: 140 bytes
 
-const jaData string = "" + // Size: 471 bytes
+const jaData string = "" + // Size: 464 bytes
 	"\x14\x01\x81\x01\x00=\x01\x0c\x02%[1]dヵ月\x00\x0c\x02%[1]dヵ月\x14\x01\x81" +
 	"\x01\x00=\x01\x09\x02%[1]d日\x00\x09\x02%[1]d日\x14\x01\x81\x01\x00=\x01" +
 	"\x0c\x02%[1]d時間\x00\x0c\x02%[1]d時間\x14\x01\x81\x01\x00=\x01\x09\x02%[1]d" +
-	"分\x00\x09\x02%[1]d分\x02%[1]sはこちらを接続したカレンダーの通知を行うチャンネルとして設定しました。\x02%[1" +
-	"]sはこちらをカレンダーの通知チャンネルから削除しました。\x02%[1]d日間のイベント情報\x02終日\x02開催\x02新しいイベントを企" +
-	"画\x02イベントは中止となりました。\x02更新\x02場所\x02日時\x02期間"
+	"分\x00\x09\x02%[1]d分\x02新しいイベントを企画\x02開催\x02イベントは中止となりました。\x02%[1]d日間のイ" +
+	"ベント情報\x02終日\x02%[1]sはこちらを接続したカレンダーの通知を行うチャンネルとして設定しました。\x02%[1]sはこちらをカ" +
+	"レンダーの通知チャンネルから削除しました。\x02場所\x02日時\x02期間"
 
-var nlIndex = []uint32{ // 16 elements
+var nlIndex = []uint32{ // 29 elements
 	0x00000000, 0x00000024, 0x00000044, 0x0000004e,
-	0x00000073, 0x000000c3, 0x0000011e, 0x00000171,
-	0x0000017d, 0x00000187, 0x0000019f, 0x000001b8,
-	0x000001c3, 0x000001ca, 0x000001d7, 0x000001e0,
-} // Size: 88 bytes
+	0x00000073, 0x0000008b, 0x00000095, 0x000000ae,
+	0x00000101, 0x0000010d, 0x0000015d, 0x000001b8,
+	0x000001bf, 0x000001cc, 0x000001d5, 0x000001d5,
+	0x000001d5, 0x000001d5, 0x000001d5, 0x000001d5,
+	0x000001d5, 0x000001d5, 0x000001d5, 0x000001d5,
+	0x000001d5, 0x000001d5, 0x000001d5, 0x000001d5,
+	0x000001d5,
+} // Size: 140 bytes
 
-const nlData string = "" + // Size: 480 bytes
+const nlData string = "" + // Size: 469 bytes
 	"\x14\x01\x81\x01\x00=\x01\x0c\x02%[1]d maand\x00\x0e\x02%[1]d maanden" +
 	"\x14\x01\x81\x01\x00=\x01\x0a\x02%[1]d dag\x00\x0c\x02%[1]d dagen\x02%[1" +
 	"]d uur\x14\x01\x81\x01\x00=\x01\x0d\x02%[1]d minuut\x00\x0e\x02%[1]d min" +
-	"uten\x02%[1]s heeft een notifier gemaakt die dit kanaal koppelt aan een " +
-	"externe agenda.\x02%[1]s heeft een notifier verwijderd die dit kanaal he" +
-	"eft gekoppeld aan een externe agenda.\x14\x01\x81\x01\x00=\x01!\x02Evene" +
-	"menten voor de volgende dag\x00(\x02Evenementen voor de komende %[1]d da" +
-	"gen\x02De hele dag\x02Beginnend\x02Nieuw evenement gepland\x02Evenement " +
-	"is geannuleerd\x02Bijgewerkt\x02Plaats\x02Gepland voor\x02Looptijd"
+	"uten\x02Nieuw evenement gepland\x02Beginnend\x02Evenement is geannuleerd" +
+	"\x14\x01\x81\x01\x00=\x01!\x02Evenementen voor de volgende dag\x00(\x02E" +
+	"venementen voor de komende %[1]d dagen\x02De hele dag\x02%[1]s heeft een" +
+	" notifier gemaakt die dit kanaal koppelt aan een externe agenda.\x02%[1]" +
+	"s heeft een notifier verwijderd die dit kanaal heeft gekoppeld aan een e" +
+	"xterne agenda.\x02Plaats\x02Gepland voor\x02Looptijd"
 
-var ptIndex = []uint32{ // 16 elements
+var ptIndex = []uint32{ // 29 elements
 	0x00000000, 0x00000021, 0x00000040, 0x00000061,
-	0x00000086, 0x000000d7, 0x0000012b, 0x0000016e,
-	0x00000179, 0x00000184, 0x0000019b, 0x000001b2,
-	0x000001bd, 0x000001c3, 0x000001d3, 0x000001dd,
-} // Size: 88 bytes
+	0x00000086, 0x0000009d, 0x000000a8, 0x000000bf,
+	0x00000102, 0x0000010d, 0x0000015e, 0x000001b2,
+	0x000001b8, 0x000001c8, 0x000001d2, 0x000001d2,
+	0x000001d2, 0x000001d2, 0x000001d2, 0x000001d2,
+	0x000001d2, 0x000001d2, 0x000001d2, 0x000001d2,
+	0x000001d2, 0x000001d2, 0x000001d2, 0x000001d2,
+	0x000001d2,
+} // Size: 140 bytes
 
-const ptData string = "" + // Size: 477 bytes
+const ptData string = "" + // Size: 466 bytes
 	"\x14\x01\x81\x01\x00=\x01\x0b\x02%[1]d mês\x00\x0c\x02%[1]d meses\x14" +
 	"\x01\x81\x01\x00=\x01\x0a\x02%[1]d dia\x00\x0b\x02%[1]d dias\x14\x01\x81" +
 	"\x01\x00=\x01\x0b\x02%[1]d hora\x00\x0c\x02%[1]d horas\x14\x01\x81\x01" +
-	"\x00=\x01\x0d\x02%[1]d minuto\x00\x0e\x02%[1]d minutos\x02%[1]s ha cread" +
-	"o un notificador que conecta este canal con un calendario externo.\x02%[" +
-	"1]s ha eliminado un notificador que conectaba este canal a un calendario" +
-	" externo.\x14\x01\x81\x01\x00=\x01\x18\x02Eventos no dia seguinte\x00!" +
-	"\x02Eventos nos próximos %[1]d dias\x02Todo o dia\x02A começar\x02Novo e" +
-	"vento programado\x02O evento foi cancelado\x02Atualizado\x02Local\x02Pro" +
-	"gramado para\x02Duração"
+	"\x00=\x01\x0d\x02%[1]d minuto\x00\x0e\x02%[1]d minutos\x02Novo evento pr" +
+	"ogramado\x02A começar\x02O evento foi cancelado\x14\x01\x81\x01\x00=\x01" +
+	"\x18\x02Eventos no dia seguinte\x00!\x02Eventos nos próximos %[1]d dias" +
+	"\x02Todo o dia\x02%[1]s ha creado un notificador que conecta este canal " +
+	"con un calendario externo.\x02%[1]s ha eliminado un notificador que cone" +
+	"ctaba este canal a un calendario externo.\x02Local\x02Programado para" +
+	"\x02Duração"
 
-var ruIndex = []uint32{ // 16 elements
+var ruIndex = []uint32{ // 29 elements
 	0x00000000, 0x00000072, 0x000000ca, 0x00000128,
-	0x00000198, 0x00000214, 0x00000290, 0x000002c7,
-	0x000002d9, 0x000002ee, 0x0000032b, 0x00000354,
-	0x00000365, 0x00000385, 0x000003a5, 0x000003be,
-} // Size: 88 bytes
+	0x00000198, 0x000001d5, 0x000001ea, 0x00000213,
+	0x0000024a, 0x0000025c, 0x000002d8, 0x00000354,
+	0x00000374, 0x00000394, 0x000003ad, 0x000003ad,
+	0x000003ad, 0x000003ad, 0x000003ad, 0x000003ad,
+	0x000003ad, 0x000003ad, 0x000003ad, 0x000003ad,
+	0x000003ad, 0x000003ad, 0x000003ad, 0x000003ad,
+	0x000003ad,
+} // Size: 140 bytes
 
-const ruData string = "" + // Size: 958 bytes
+const ruData string = "" + // Size: 941 bytes
 	"\x14\x01\x81\x01\x00=\x01\x11\x02%[1]d Месяц=\x02\x13\x02%[1]d месяца=" +
 	"\x03\x13\x02%[1]d месяца=\x04\x13\x02%[1]d месяца\x00\x15\x02%[1]d месяц" +
 	"ев\x14\x01\x81\x01\x00=\x01\x0f\x02%[1]d День=\x02\x0d\x02%[1]d дня=" +
@@ -247,29 +305,33 @@ const ruData string = "" + // Size: 958 bytes
 	"\x01\x81\x01\x00=\x01\x0d\x02%[1]d Час=\x02\x0f\x02%[1]d часа=\x03\x0f" +
 	"\x02%[1]d часа=\x04\x0f\x02%[1]d часа\x00\x11\x02%[1]d Часов\x14\x01\x81" +
 	"\x01\x00=\x01\x13\x02%[1]d Минута=\x02\x13\x02%[1]d минуты=\x03\x13\x02%" +
-	"[1]d минуты=\x04\x13\x02%[1]d минуты\x00\x11\x02%[1]d минут\x02%[1]s соз" +
-	"дал оповещение, соединяющее этот канал с внешним календарем.\x02%[1]s у" +
-	"далил оповещение, соединяющее этот канал с внешним календарем.\x02Событ" +
-	"ия на ближайшие  %[1]d Дней\x02Весь день\x02Начинается\x02Запланировано" +
-	" новое мероприятие\x02Событие было отменено\x02Обновлен\x02Место проведе" +
-	"ния\x02Запланировано на\x02Длительность"
+	"[1]d минуты=\x04\x13\x02%[1]d минуты\x00\x11\x02%[1]d минут\x02Запланиро" +
+	"вано новое мероприятие\x02Начинается\x02Событие было отменено\x02Событи" +
+	"я на ближайшие  %[1]d Дней\x02Весь день\x02%[1]s создал оповещение, сое" +
+	"диняющее этот канал с внешним календарем.\x02%[1]s удалил оповещение, с" +
+	"оединяющее этот канал с внешним календарем.\x02Место проведения\x02Запл" +
+	"анировано на\x02Длительность"
 
-var svIndex = []uint32{ // 16 elements
+var svIndex = []uint32{ // 29 elements
 	0x00000000, 0x00000026, 0x00000046, 0x00000069,
-	0x0000008d, 0x000000e0, 0x00000137, 0x00000157,
-	0x00000162, 0x0000016a, 0x00000180, 0x0000019b,
-	0x000001a6, 0x000001ac, 0x000001b5, 0x000001bc,
-} // Size: 88 bytes
+	0x0000008d, 0x000000a3, 0x000000ab, 0x000000c6,
+	0x000000e6, 0x000000f1, 0x00000144, 0x0000019b,
+	0x000001a1, 0x000001aa, 0x000001b1, 0x000001b1,
+	0x000001b1, 0x000001b1, 0x000001b1, 0x000001b1,
+	0x000001b1, 0x000001b1, 0x000001b1, 0x000001b1,
+	0x000001b1, 0x000001b1, 0x000001b1, 0x000001b1,
+	0x000001b1,
+} // Size: 140 bytes
 
-const svData string = "" + // Size: 444 bytes
+const svData string = "" + // Size: 433 bytes
 	"\x14\x01\x81\x01\x00=\x01\x0d\x02%[1]d Månad\x00\x0f\x02%[1]d Månader" +
 	"\x14\x01\x81\x01\x00=\x01\x0a\x02%[1]d Dag\x00\x0c\x02%[1]d Dagar\x14" +
 	"\x01\x81\x01\x00=\x01\x0c\x02%[1]d Timme\x00\x0d\x02%[1]d Timmar\x14\x01" +
-	"\x81\x01\x00=\x01\x0c\x02%[1]d Minut\x00\x0e\x02%[1]d Minuter\x02%[1]s h" +
-	"ar skapat en notifier som kopplar den här kanalen till en extern kalende" +
-	"r.\x02%[1]s har tagit bort en notifier som kopplar den här kanaler till " +
-	"en extern kalender.\x02Event de kommande %[1]d dagarna\x02Hela dagen\x02" +
-	"Börjar\x02Nytt event schemalagt\x02Event har blivit inställt\x02Uppdater" +
-	"ad\x02Plats\x02Starttid\x02Längd"
+	"\x81\x01\x00=\x01\x0c\x02%[1]d Minut\x00\x0e\x02%[1]d Minuter\x02Nytt ev" +
+	"ent schemalagt\x02Börjar\x02Event har blivit inställt\x02Event de komman" +
+	"de %[1]d dagarna\x02Hela dagen\x02%[1]s har skapat en notifier som koppl" +
+	"ar den här kanalen till en extern kalender.\x02%[1]s har tagit bort en n" +
+	"otifier som kopplar den här kanaler till en extern kalender.\x02Plats" +
+	"\x02Starttid\x02Längd"
 
-	// Total table size 6927 bytes (6KiB); checksum: BDE17EA0
+	// Total table size 7725 bytes (7KiB); checksum: 52A6BDA3
