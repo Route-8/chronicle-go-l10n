@@ -150,6 +150,239 @@
       ]
     },
     {
+      "id": "New recurring event scheduled",
+      "message": "New recurring event scheduled",
+      "translation": "Запланировано новое повторяющееся мероприятие"
+    },
+    {
+      "id": "{RecurringCount} future instances also created",
+      "message": "{RecurringCount} future instances also created",
+      "translation": {
+        "select": {
+          "feature": "plural",
+          "arg": "RecurringCount",
+          "cases": {
+            "=1": {
+              "msg": "{RecurringCount} будущий экземпляр также создан"
+            },
+            "=2": {
+              "msg": "{RecurringCount} будущих экземпляра также созданы"
+            },
+            "=3": {
+              "msg": "{RecurringCount} будущих экземпляра также созданы"
+            },
+            "=4": {
+              "msg": "{RecurringCount} будущих экземпляра также созданы"
+            },
+            "other": {
+              "msg": "{RecurringCount} будущих экземпляров также созданы"
+            }
+          }
+        }
+      },
+      "placeholders": [
+        {
+          "id": "RecurringCount",
+          "string": "%[1]d",
+          "type": "int",
+          "underlyingType": "int",
+          "argNum": 1,
+          "expr": "d.RecurringCount"
+        }
+      ]
+    },
+    {
+      "id": "1 event created",
+      "message": "1 event created",
+      "translation": "1 мероприятие создано"
+    },
+    {
+      "id": "New event scheduled",
+      "message": "New event scheduled",
+      "translation": "Запланировано новое мероприятие"
+    },
+    {
+      "id": "New recurring event found",
+      "message": "New recurring event found",
+      "translation": "Найдено новое повторяющееся мероприятие"
+    },
+    {
+      "id": "{RecurringCount} future instances also found",
+      "message": "{RecurringCount} future instances also found",
+      "translation": {
+        "select": {
+          "feature": "plural",
+          "arg": "RecurringCount",
+          "cases": {
+            "=1": {
+              "msg": "{RecurringCount} будущий экземпляр также найден"
+            },
+            "=2": {
+              "msg": "{RecurringCount} будущих экземпляра также найдены"
+            },
+            "=3": {
+              "msg": "{RecurringCount} будущих экземпляра также найдены"
+            },
+            "=4": {
+              "msg": "{RecurringCount} будущих экземпляра также найдены"
+            },
+            "other": {
+              "msg": "{RecurringCount} будущих экземпляров также найдено"
+            }
+          }
+        }
+      },
+      "placeholders": [
+        {
+          "id": "RecurringCount",
+          "string": "%[1]d",
+          "type": "int",
+          "underlyingType": "int",
+          "argNum": 1,
+          "expr": "d.RecurringCount"
+        }
+      ]
+    },
+    {
+      "id": "1 event found",
+      "message": "1 event found",
+      "translation": "1 мероприятие найдено"
+    },
+    {
+      "id": "New event found",
+      "message": "New event found",
+      "translation": "Найдено новое мероприятие"
+    },
+    {
+      "id": "Recurring Event Updated",
+      "message": "Recurring Event Updated",
+      "translation": "Повторяющееся мероприятие обновлено"
+    },
+    {
+      "id": "{RecurringCount} future instances also updated",
+      "message": "{RecurringCount} future instances also updated",
+      "translation": {
+        "select": {
+          "feature": "plural",
+          "arg": "RecurringCount",
+          "cases": {
+            "=1": {
+              "msg": "{RecurringCount} будущий экземпляр также обновлен"
+            },
+            "=2": {
+              "msg": "{RecurringCount} будущих экземпляра также обновлены"
+            },
+            "=3": {
+              "msg": "{RecurringCount} будущих экземпляра также обновлены"
+            },
+            "=4": {
+              "msg": "{RecurringCount} будущих экземпляра также обновлены"
+            },
+            "other": {
+              "msg": "{RecurringCount} будущих экземпляров также обновлены"
+            }
+          }
+        }
+      },
+      "placeholders": [
+        {
+          "id": "RecurringCount",
+          "string": "%[1]d",
+          "type": "int",
+          "underlyingType": "int",
+          "argNum": 1,
+          "expr": "d.RecurringCount"
+        }
+      ]
+    },
+    {
+      "id": "1 event updated",
+      "message": "1 event updated",
+      "translation": "1 мероприятие обновлено"
+    },
+    {
+      "id": "Event Updated",
+      "message": "Event Updated",
+      "translation": "Мероприятие обновлено"
+    },
+    {
+      "id": "Starting",
+      "message": "Starting",
+      "translation": "Начинается"
+    },
+    {
+      "id": "Recurring event has been cancelled",
+      "message": "Recurring event has been cancelled",
+      "translation": "Повторяющееся мероприятие было отменено"
+    },
+    {
+      "id": "{RecurringCount} future instances also cancelled",
+      "message": "{RecurringCount} future instances also cancelled",
+      "translation": {
+        "select": {
+          "feature": "plural",
+          "arg": "RecurringCount",
+          "cases": {
+            "=1": {
+              "msg": "{RecurringCount} будущий экземпляр также отменен"
+            },
+            "=2": {
+              "msg": "{RecurringCount} будущих экземпляра также отменены"
+            },
+            "=3": {
+              "msg": "{RecurringCount} будущих экземпляра также отменены"
+            },
+            "=4": {
+              "msg": "{RecurringCount} будущих экземпляра также отменены"
+            },
+            "other": {
+              "msg": "{RecurringCount} будущих экземпляров также отменены"
+            }
+          }
+        }
+      },
+      "placeholders": [
+        {
+          "id": "RecurringCount",
+          "string": "%[1]d",
+          "type": "int",
+          "underlyingType": "int",
+          "argNum": 1,
+          "expr": "d.RecurringCount"
+        }
+      ]
+    },
+    {
+      "id": "1 event cancelled",
+      "message": "1 event cancelled",
+      "translation": "1 мероприятие отменено"
+    },
+    {
+      "id": "Event has been cancelled",
+      "message": "Event has been cancelled",
+      "translation": "Событие было отменено"
+    },
+    {
+      "id": "Events for the next {Days} days",
+      "message": "Events for the next {Days} days",
+      "translation": "События на ближайшие  {Days} Дней",
+      "placeholders": [
+        {
+          "id": "Days",
+          "string": "%[1]d",
+          "type": "int",
+          "underlyingType": "int",
+          "argNum": 1,
+          "expr": "eventSummary.Days"
+        }
+      ]
+    },
+    {
+      "id": "All Day",
+      "message": "All Day",
+      "translation": "Весь день"
+    },
+    {
       "id": "{Name} has created a notifier which connects this channel to an external calendar.",
       "message": "{Name} has created a notifier which connects this channel to an external calendar.",
       "translation": "{Name} создал оповещение, соединяющее этот канал с внешним календарем.",
@@ -180,46 +413,6 @@
       ]
     },
     {
-      "id": "Events for the next {Days} days",
-      "message": "Events for the next {Days} days",
-      "translation": "События на ближайшие  {Days} Дней",
-      "placeholders": [
-        {
-          "id": "Days",
-          "string": "%[1]d",
-          "type": "int",
-          "underlyingType": "int",
-          "argNum": 1,
-          "expr": "eventSummary.Days"
-        }
-      ]
-    },
-    {
-      "id": "No events scheduled",
-      "message": "No events scheduled",
-      "translation": "Нет запланированных мероприятий"
-    },
-    {
-      "id": "All Day",
-      "message": "All Day",
-      "translation": "Весь день"
-    },
-    {
-      "id": "New event scheduled",
-      "message": "New event scheduled",
-      "translation": "Запланировано новое мероприятие"
-    },
-    {
-      "id": "Event has been cancelled",
-      "message": "Event has been cancelled",
-      "translation": "Событие было отменено"
-    },
-    {
-      "id": "Updated",
-      "message": "Updated",
-      "translation": "Обновлен"
-    },
-    {
       "id": "Location",
       "message": "Location",
       "translation": "Место проведения"
@@ -233,11 +426,6 @@
       "id": "Duration",
       "message": "Duration",
       "translation": "Длительность"
-    },
-    {
-      "id": "Starting",
-      "message": "Starting",
-      "translation": "Начинается"
     }
   ]
 }

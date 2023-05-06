@@ -1,243 +1,431 @@
 {
-    "language": "cs-CZ",
-    "messages": [
-        {
-            "id": "{Months} months",
-            "message": "{Months} months",
-            "translation": {
-                "select": {
-                    "feature": "plural",
-                    "arg": "Months",
-                    "cases": {
-                        "=1": {
-                            "msg": "{Months} měsíc"
-                        },
-                        "=2" :{
-                            "msg": "{Months} měsíce"
-                        },
-                        "=3" :{
-                            "msg": "{Months} měsíce"
-                        },
-                        "=4" :{
-                            "msg": "{Months} měsíce"
-                        },
-                        "other": {
-                            "msg": "{Months} měsíců"
-                        }
-                    }
-                }
+  "language": "cs-CZ",
+  "messages": [
+    {
+      "id": "{Months} months",
+      "message": "{Months} months",
+      "translation": {
+        "select": {
+          "feature": "plural",
+          "arg": "Months",
+          "cases": {
+            "=1": {
+              "msg": "{Months} měsíc"
             },
-            "placeholders": [
-                {
-                    "id": "Months",
-                    "string": "%[1]d",
-                    "type": "int",
-                    "underlyingType": "int",
-                    "argNum": 1,
-                    "expr": "counter.Months"
-                }
-            ]
-        },
-        {
-            "id": "{Days} days",
-            "message": "{Days} days",
-            "translation": {
-                "select": {
-                    "feature": "plural",
-                    "arg": "Days",
-                    "cases": {
-                        "=1": {
-                            "msg": "{Days} den"
-                        },
-                        "=2": {
-                            "msg": "{Days} dny"
-                        },
-                        "=3": {
-                            "msg": "{Days} dny"
-                        },
-                        "=4": {
-                            "msg": "{Days} dny"
-                        },
-                        "other": {
-                            "msg": "{Days} dnů"
-                        }
-                    }
-                }
+            "=2": {
+              "msg": "{Months} měsíce"
             },
-            "placeholders": [
-                {
-                    "id": "Days",
-                    "string": "%[1]d",
-                    "type": "int",
-                    "underlyingType": "int",
-                    "argNum": 1,
-                    "expr": "counter.Days"
-                }
-            ]
-        },
-        {
-            "id": "{Hours} hours",
-            "message": "{Hours} hours",
-            "translation": {
-                "select": {
-                    "feature": "plural",
-                    "arg": "Hours",
-                    "cases": {
-                        "=1": {
-                            "msg": "{Hours} hodina"
-                        },
-                        "=2": {
-                            "msg": "{Hours} hodiny"
-                        },
-                        "=3": {
-                            "msg": "{Hours} hodiny"
-                        },
-                        "=4": {
-                            "msg": "{Hours} hodiny"
-                        },
-                        "other": {
-                            "msg": "{Hours} hodin"
-                        }
-                    }
-                }
+            "=3": {
+              "msg": "{Months} měsíce"
             },
-            "placeholders": [
-                {
-                    "id": "Hours",
-                    "string": "%[1]d",
-                    "type": "int",
-                    "underlyingType": "int",
-                    "argNum": 1,
-                    "expr": "counter.Hours"
-                }
-            ]
-        },
-        {
-            "id": "{Minutes} minutes",
-            "message": "{Minutes} minutes",
-            "translation": {
-                "select": {
-                    "feature": "plural",
-                    "arg": "Minutes",
-                    "cases": {
-                        "=1": {
-                            "msg": "{Minutes} minuta"
-                        },
-                        "=2": {
-                            "msg":"{Minutes} minuty"
-                        },
-                        "=3": {
-                            "msg":"{Minutes} minuty"
-                        },
-                        "=4": {
-                            "msg":"{Minutes} minuty"
-                        },
-                        "other": {
-                            "msg": "{Minutes} minut"
-                        }
-                    }
-                }
+            "=4": {
+              "msg": "{Months} měsíce"
             },
-            "placeholders": [
-                {
-                    "id": "Minutes",
-                    "string": "%[1]d",
-                    "type": "int",
-                    "underlyingType": "int",
-                    "argNum": 1,
-                    "expr": "counter.Minutes"
-                }
-            ]
-        },
-        {
-            "id": "{Name} has created a notifier which connects this channel to an external calendar.",
-            "message": "{Name} has created a notifier which connects this channel to an external calendar.",
-            "translation": "{Name} vytvořil notifikátor, který napojuje tento kanál na externí kalendář.",
-            "placeholders": [
-                {
-                    "id": "Name",
-                    "string": "%[1]s",
-                    "type": "string",
-                    "underlyingType": "string",
-                    "argNum": 1,
-                    "expr": "user.Name"
-                }
-            ]
-        },
-        {
-            "id": "{Name} has deleted a notifier which connected this channel to an external calendar.",
-            "message": "{Name} has deleted a notifier which connected this channel to an external calendar.",
-            "translation": "{Name} zrušil notifikátor, který napojoval tento kanál na externí kalendář.",
-            "placeholders": [
-                {
-                    "id": "Name",
-                    "string": "%[1]s",
-                    "type": "string",
-                    "underlyingType": "string",
-                    "argNum": 1,
-                    "expr": "user.Name"
-                }
-            ]
-        },
-        {
-            "id": "Events for the next {Days} days",
-            "message": "Events for the next {Days} days",
-            "translation": "Akce v příštích {Days} dnech",
-            "placeholders": [
-                {
-                    "id": "Days",
-                    "string": "%[1]d",
-                    "type": "int",
-                    "underlyingType": "int",
-                    "argNum": 1,
-                    "expr": "eventSummary.Days"
-                }
-            ]
-        },
-        {
-            "id": "No events scheduled",
-            "message": "No events scheduled",
-            "translation": "Žádné naplánované události"
-        },
-        {
-            "id": "All Day",
-            "message": "All Day",
-            "translation": "Celý den"
-        },
-        {
-            "id": "New event scheduled",
-            "message": "New event scheduled",
-            "translation": "Byla naplánována nová událost"
-        },
-        {
-            "id": "Event has been cancelled",
-            "message": "Event has been cancelled",
-            "translation": "Událost byla zrušena"
-        },
-        {
-            "id": "Updated",
-            "message": "Updated",
-            "translation": "Aktualizováno"
-        },
-        {
-            "id": "Location",
-            "message": "Location",
-            "translation": "Místo konání"
-        },
-        {
-            "id": "Scheduled for",
-            "message": "Scheduled for",
-            "translation": "Naplánováno na"
-        },
-        {
-            "id": "Duration",
-            "message": "Duration",
-            "translation": "Délka trvání"
-        },
-        {
-            "id": "Starting",
-            "message": "Starting",
-            "translation": "Začátek"
+            "other": {
+              "msg": "{Months} měsíců"
+            }
+          }
         }
-    ]
+      },
+      "placeholders": [
+        {
+          "id": "Months",
+          "string": "%[1]d",
+          "type": "int",
+          "underlyingType": "int",
+          "argNum": 1,
+          "expr": "counter.Months"
+        }
+      ]
+    },
+    {
+      "id": "{Days} days",
+      "message": "{Days} days",
+      "translation": {
+        "select": {
+          "feature": "plural",
+          "arg": "Days",
+          "cases": {
+            "=1": {
+              "msg": "{Days} den"
+            },
+            "=2": {
+              "msg": "{Days} dny"
+            },
+            "=3": {
+              "msg": "{Days} dny"
+            },
+            "=4": {
+              "msg": "{Days} dny"
+            },
+            "other": {
+              "msg": "{Days} dnů"
+            }
+          }
+        }
+      },
+      "placeholders": [
+        {
+          "id": "Days",
+          "string": "%[1]d",
+          "type": "int",
+          "underlyingType": "int",
+          "argNum": 1,
+          "expr": "counter.Days"
+        }
+      ]
+    },
+    {
+      "id": "{Hours} hours",
+      "message": "{Hours} hours",
+      "translation": {
+        "select": {
+          "feature": "plural",
+          "arg": "Hours",
+          "cases": {
+            "=1": {
+              "msg": "{Hours} hodina"
+            },
+            "=2": {
+              "msg": "{Hours} hodiny"
+            },
+            "=3": {
+              "msg": "{Hours} hodiny"
+            },
+            "=4": {
+              "msg": "{Hours} hodiny"
+            },
+            "other": {
+              "msg": "{Hours} hodin"
+            }
+          }
+        }
+      },
+      "placeholders": [
+        {
+          "id": "Hours",
+          "string": "%[1]d",
+          "type": "int",
+          "underlyingType": "int",
+          "argNum": 1,
+          "expr": "counter.Hours"
+        }
+      ]
+    },
+    {
+      "id": "{Minutes} minutes",
+      "message": "{Minutes} minutes",
+      "translation": {
+        "select": {
+          "feature": "plural",
+          "arg": "Minutes",
+          "cases": {
+            "=1": {
+              "msg": "{Minutes} minuta"
+            },
+            "=2": {
+              "msg": "{Minutes} minuty"
+            },
+            "=3": {
+              "msg": "{Minutes} minuty"
+            },
+            "=4": {
+              "msg": "{Minutes} minuty"
+            },
+            "other": {
+              "msg": "{Minutes} minut"
+            }
+          }
+        }
+      },
+      "placeholders": [
+        {
+          "id": "Minutes",
+          "string": "%[1]d",
+          "type": "int",
+          "underlyingType": "int",
+          "argNum": 1,
+          "expr": "counter.Minutes"
+        }
+      ]
+    },
+    {
+      "id": "New recurring event scheduled",
+      "message": "New recurring event scheduled",
+      "translation": "Byla naplánována nová opakující se událost"
+    },
+    {
+      "id": "{RecurringCount} future instances also created",
+      "message": "{RecurringCount} future instances also created",
+      "translation": {
+        "select": {
+          "feature": "plural",
+          "arg": "RecurringCount",
+          "cases": {
+            "=1": {
+              "msg": "{RecurringCount} budoucí instance také vytvořena"
+            },
+            "=2": {
+              "msg": "{RecurringCount} budoucí instance také vytvořeny"
+            },
+            "=3": {
+              "msg": "{RecurringCount} budoucí instance také vytvořeny"
+            },
+            "=4": {
+              "msg": "{RecurringCount} budoucí instance také vytvořeny"
+            },
+            "other": {
+              "msg": "{RecurringCount} budoucích instancí také vytvořeno"
+            }
+          }
+        }
+      },
+      "placeholders": [
+        {
+          "id": "RecurringCount",
+          "string": "%[1]d",
+          "type": "int",
+          "underlyingType": "int",
+          "argNum": 1,
+          "expr": "d.RecurringCount"
+        }
+      ]
+    },
+    {
+      "id": "1 event created",
+      "message": "1 event created",
+      "translation": "1 událost vytvořena"
+    },
+    {
+      "id": "New event scheduled",
+      "message": "New event scheduled",
+      "translation": "Byla naplánována nová událost"
+    },
+    {
+      "id": "New recurring event found",
+      "message": "New recurring event found",
+      "translation": "Byla nalezena nová opakující se událost"
+    },
+    {
+      "id": "{RecurringCount} future instances also found",
+      "message": "{RecurringCount} future instances also found",
+      "translation": {
+        "select": {
+          "feature": "plural",
+          "arg": "RecurringCount",
+          "cases": {
+            "=1": {
+              "msg": "{RecurringCount} budoucí instance také nalezena"
+            },
+            "=2": {
+              "msg": "{RecurringCount} budoucí instance také nalezeny"
+            },
+            "=3": {
+              "msg": "{RecurringCount} budoucí instance také nalezeny"
+            },
+            "=4": {
+              "msg": "{RecurringCount} budoucí instance také nalezeny"
+            },
+            "other": {
+              "msg": "{RecurringCount} budoucích instancí také nalezeno"
+            }
+          }
+        }
+      },
+      "placeholders": [
+        {
+          "id": "RecurringCount",
+          "string": "%[1]d",
+          "type": "int",
+          "underlyingType": "int",
+          "argNum": 1,
+          "expr": "d.RecurringCount"
+        }
+      ]
+    },
+    {
+      "id": "1 event found",
+      "message": "1 event found",
+      "translation": "1 událost nalezena"
+    },
+    {
+      "id": "New event found",
+      "message": "New event found",
+      "translation": "Byla nalezena nová událost"
+    },
+    {
+      "id": "Recurring Event Updated",
+      "message": "Recurring Event Updated",
+      "translation": "Opakující se událost aktualizována"
+    },
+    {
+      "id": "{RecurringCount} future instances also updated",
+      "message": "{RecurringCount} future instances also updated",
+      "translation": {
+        "select": {
+          "feature": "plural",
+          "arg": "RecurringCount",
+          "cases": {
+            "=1": {
+              "msg": "{RecurringCount} budoucí instance také aktualizována"
+            },
+            "=2": {
+              "msg": "{RecurringCount} budoucí instance také aktualizovány"
+            },
+            "=3": {
+              "msg": "{RecurringCount} budoucí instance také aktualizovány"
+            },
+            "=4": {
+              "msg": "{RecurringCount} budoucí instance také aktualizovány"
+            },
+            "other": {
+              "msg": "{RecurringCount} budoucích instancí také aktualizováno"
+            }
+          }
+        }
+      },
+      "placeholders": [
+        {
+          "id": "RecurringCount",
+          "string": "%[1]d",
+          "type": "int",
+          "underlyingType": "int",
+          "argNum": 1,
+          "expr": "d.RecurringCount"
+        }
+      ]
+    },
+    {
+      "id": "1 event updated",
+      "message": "1 event updated",
+      "translation": "1 událost aktualizována"
+    },
+    {
+      "id": "Event Updated",
+      "message": "Event Updated",
+      "translation": "Událost aktualizována"
+    },
+    {
+      "id": "Starting",
+      "message": "Starting",
+      "translation": "Začátek"
+    },
+    {
+      "id": "Recurring event has been cancelled",
+      "message": "Recurring event has been cancelled",
+      "translation": "Opakující se událost byla zrušena"
+    },
+    {
+      "id": "{RecurringCount} future instances also cancelled",
+      "message": "{RecurringCount} future instances also cancelled",
+      "translation": {
+        "select": {
+          "feature": "plural",
+          "arg": "RecurringCount",
+          "cases": {
+            "=1": {
+              "msg": "{RecurringCount} budoucí instance také zrušena"
+            },
+            "=2": {
+              "msg": "{RecurringCount} budoucí instance také zrušeny"
+            },
+            "=3": {
+              "msg": "{RecurringCount} budoucí instance také zrušeny"
+            },
+            "=4": {
+              "msg": "{RecurringCount} budoucí instance také zrušeny"
+            },
+            "other": {
+              "msg": "{RecurringCount} budoucích instancí také zrušeno"
+            }
+          }
+        }
+      },
+      "placeholders": [
+        {
+          "id": "RecurringCount",
+          "string": "%[1]d",
+          "type": "int",
+          "underlyingType": "int",
+          "argNum": 1,
+          "expr": "d.RecurringCount"
+        }
+      ]
+    },
+    {
+      "id": "1 event cancelled",
+      "message": "1 event cancelled",
+      "translation": "1 událost zrušena"
+    },
+    {
+      "id": "Event has been cancelled",
+      "message": "Event has been cancelled",
+      "translation": "Událost byla zrušena"
+    },
+    {
+      "id": "Events for the next {Days} days",
+      "message": "Events for the next {Days} days",
+      "translation": "Akce v příštích {Days} dnech",
+      "placeholders": [
+        {
+          "id": "Days",
+          "string": "%[1]d",
+          "type": "int",
+          "underlyingType": "int",
+          "argNum": 1,
+          "expr": "eventSummary.Days"
+        }
+      ]
+    },
+    {
+      "id": "All Day",
+      "message": "All Day",
+      "translation": "Celý den"
+    },
+    {
+      "id": "{Name} has created a notifier which connects this channel to an external calendar.",
+      "message": "{Name} has created a notifier which connects this channel to an external calendar.",
+      "translation": "{Name} vytvořil notifikátor, který napojuje tento kanál na externí kalendář.",
+      "placeholders": [
+        {
+          "id": "Name",
+          "string": "%[1]s",
+          "type": "string",
+          "underlyingType": "string",
+          "argNum": 1,
+          "expr": "user.Name"
+        }
+      ]
+    },
+    {
+      "id": "{Name} has deleted a notifier which connected this channel to an external calendar.",
+      "message": "{Name} has deleted a notifier which connected this channel to an external calendar.",
+      "translation": "{Name} zrušil notifikátor, který napojoval tento kanál na externí kalendář.",
+      "placeholders": [
+        {
+          "id": "Name",
+          "string": "%[1]s",
+          "type": "string",
+          "underlyingType": "string",
+          "argNum": 1,
+          "expr": "user.Name"
+        }
+      ]
+    },
+    {
+      "id": "Location",
+      "message": "Location",
+      "translation": "Místo konání"
+    },
+    {
+      "id": "Scheduled for",
+      "message": "Scheduled for",
+      "translation": "Naplánováno na"
+    },
+    {
+      "id": "Duration",
+      "message": "Duration",
+      "translation": "Délka trvání"
+    }
+  ]
 }
