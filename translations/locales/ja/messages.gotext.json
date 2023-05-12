@@ -114,6 +114,203 @@
       ]
     },
     {
+      "id": "New recurring event scheduled",
+      "message": "New recurring event scheduled",
+      "translation": "新しい定期イベントが予定されました。"
+    },
+    {
+      "id": "{RecurringCount} future instances also created",
+      "message": "{RecurringCount} future instances also created",
+      "translation": {
+        "select": {
+          "feature": "plural",
+          "arg": "RecurringCount",
+          "cases": {
+            "=1": {
+              "msg": "{RecurringCount}つの未来のインスタンスも作成されました。"
+            },
+            "other": {
+              "msg": "{RecurringCount}つの未来のインスタンスも作成されました。"
+            }
+          }
+        }
+      },
+      "placeholders": [
+        {
+          "id": "RecurringCount",
+          "string": "%[1]d",
+          "type": "int",
+          "underlyingType": "int",
+          "argNum": 1,
+          "expr": "d.RecurringCount"
+        }
+      ]
+    },
+    {
+      "id": "1 event created",
+      "message": "1 event created",
+      "translation": "1つのイベントが作成されました。"
+    },
+    {
+      "id": "New event scheduled",
+      "message": "New event scheduled",
+      "translation": "新しいイベントを企画"
+    },
+    {
+      "id": "New recurring event found",
+      "message": "New recurring event found",
+      "translation": "新しい定期イベントが見つかりました。"
+    },
+    {
+      "id": "{RecurringCount} future instances also found",
+      "message": "{RecurringCount} future instances also found",
+      "translation": {
+        "select": {
+          "feature": "plural",
+          "arg": "RecurringCount",
+          "cases": {
+            "=1": {
+              "msg": "{RecurringCount}つの未来のインスタンスも見つかりました。"
+            },
+            "other": {
+              "msg": "{RecurringCount}つの未来のインスタンスも見つかりました。"
+            }
+          }
+        }
+      },
+      "placeholders": [
+        {
+          "id": "RecurringCount",
+          "string": "%[1]d",
+          "type": "int",
+          "underlyingType": "int",
+          "argNum": 1,
+          "expr": "d.RecurringCount"
+        }
+      ]
+    },
+    {
+      "id": "1 event found",
+      "message": "1 event found",
+      "translation": "1つのイベントが見つかりました。"
+    },
+    {
+      "id": "New event found",
+      "message": "New event found",
+      "translation": "新しいイベントが見つかりました。"
+    },
+    {
+      "id": "Recurring Event Updated",
+      "message": "Recurring Event Updated",
+      "translation": "定期イベントが更新されました。"
+    },
+    {
+      "id": "{RecurringCount} future instances also updated",
+      "message": "{RecurringCount} future instances also updated",
+      "translation": {
+        "select": {
+          "feature": "plural",
+          "arg": "RecurringCount",
+          "cases": {
+            "=1": {
+              "msg": "{RecurringCount}つの未来のインスタンスも更新されました。"
+            },
+            "other": {
+              "msg": "{RecurringCount}つの未来のインスタンスも更新されました。"
+            }
+          }
+        }
+      },
+      "placeholders": [
+        {
+          "id": "RecurringCount",
+          "string": "%[1]d",
+          "type": "int",
+          "underlyingType": "int",
+          "argNum": 1,
+          "expr": "d.RecurringCount"
+        }
+      ]
+    },
+    {
+      "id": "1 event updated",
+      "message": "1 event updated",
+      "translation": "1つのイベントが更新されました。"
+    },
+    {
+      "id": "Event Updated",
+      "message": "Event Updated",
+      "translation": "イベントが更新されました。"
+    },
+    {
+      "id": "Starting",
+      "message": "Starting",
+      "translation": "開催"
+    },
+    {
+      "id": "Recurring event has been cancelled",
+      "message": "Recurring event has been cancelled",
+      "translation": "定期イベントは中止となりました"
+    },
+    {
+      "id": "{RecurringCount} future instances also cancelled",
+      "message": "{RecurringCount} future instances also cancelled",
+      "translation": {
+        "select": {
+          "feature": "plural",
+          "arg": "RecurringCount",
+          "cases": {
+            "=1": {
+              "msg": "{RecurringCount}つの未来のインスタンスも中止となりました"
+            },
+            "other": {
+              "msg": "{RecurringCount}つの未来のインスタンスも中止となりました"
+            }
+          }
+        }
+      },
+      "placeholders": [
+        {
+          "id": "RecurringCount",
+          "string": "%[1]d",
+          "type": "int",
+          "underlyingType": "int",
+          "argNum": 1,
+          "expr": "d.RecurringCount"
+        }
+      ]
+    },
+    {
+      "id": "1 event cancelled",
+      "message": "1 event cancelled",
+      "translation": "1つのイベントは中止となりました"
+    },
+    {
+      "id": "Event has been cancelled",
+      "message": "Event has been cancelled",
+      "translation": "イベントは中止となりました"
+    },
+    {
+      "id": "Events for the next {Days} days",
+      "message": "Events for the next {Days} days",
+      "translation": "{Days}日間のイベント情報",
+      "placeholders": [
+        {
+          "id": "Days",
+          "string": "%[1]d",
+          "type": "int",
+          "underlyingType": "int",
+          "argNum": 1,
+          "expr": "eventSummary.Days"
+        }
+      ]
+    },
+    {
+      "id": "All Day",
+      "message": "All Day",
+      "translation": "終日"
+    },
+    {
       "id": "{Name} has created a notifier which connects this channel to an external calendar.",
       "message": "{Name} has created a notifier which connects this channel to an external calendar.",
       "translation": "{Name}はこちらを接続したカレンダーの通知を行うチャンネルとして設定しました。",
@@ -144,46 +341,6 @@
       ]
     },
     {
-      "id": "Events for the next {Days} days",
-      "message": "Events for the next {Days} days",
-      "translation": "{Days}日間のイベント情報",
-      "placeholders": [
-        {
-          "id": "Days",
-          "string": "%[1]d",
-          "type": "int",
-          "underlyingType": "int",
-          "argNum": 1,
-          "expr": "eventSummary.Days"
-        }
-      ]
-    },
-    {
-      "id": "No events scheduled",
-      "message": "No events scheduled",
-      "translation": "予定されているイベントはありません。"
-    },
-    {
-      "id": "All Day",
-      "message": "All Day",
-      "translation": "終日"
-    },
-    {
-      "id": "New event scheduled",
-      "message": "New event scheduled",
-      "translation": "新しいイベントを企画"
-    },
-    {
-      "id": "Event has been cancelled",
-      "message": "Event has been cancelled",
-      "translation": "イベントは中止となりました。"
-    },
-    {
-      "id": "Updated",
-      "message": "Updated",
-      "translation": "更新"
-    },
-    {
       "id": "Location",
       "message": "Location",
       "translation": "場所"
@@ -197,11 +354,6 @@
       "id": "Duration",
       "message": "Duration",
       "translation": "期間"
-    },
-    {
-      "id": "Starting",
-      "message": "Starting",
-      "translation": "開催"
     }
   ]
 }

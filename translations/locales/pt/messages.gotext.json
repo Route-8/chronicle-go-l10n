@@ -1,220 +1,372 @@
 {
-    "language": "pt",
-    "messages": [
-        {
-            "id": "{Months} months",
-            "message": "{Months} months",
-            "translation": {
-                "select": {
-                    "feature": "plural",
-                    "arg": "Months",
-                    "cases": {
-                        "=1": {
-                            "msg": "{Months} mês"
-                        },
-                        "other": {
-                            "msg": "{Months} meses"
-                        }
-                    }
-                }
+  "language": "pt",
+  "messages": [
+    {
+      "id": "{Months} months",
+      "message": "{Months} months",
+      "translation": {
+        "select": {
+          "feature": "plural",
+          "arg": "Months",
+          "cases": {
+            "=1": {
+              "msg": "{Months} mês"
             },
-            "placeholders": [
-                {
-                    "id": "Months",
-                    "string": "%[1]d",
-                    "type": "int",
-                    "underlyingType": "int",
-                    "argNum": 1,
-                    "expr": "counter.Months"
-                }
-            ]
-        },
-        {
-            "id": "{Days} days",
-            "message": "{Days} days",
-            "translation": {
-                "select": {
-                    "feature": "plural",
-                    "arg": "Days",
-                    "cases": {
-                        "=1": {
-                            "msg": "{Days} dia"
-                        },
-                        "other": {
-                            "msg": "{Days} dias"
-                        }
-                    }
-                }
-            },
-            "placeholders": [
-                {
-                    "id": "Days",
-                    "string": "%[1]d",
-                    "type": "int",
-                    "underlyingType": "int",
-                    "argNum": 1,
-                    "expr": "counter.Days"
-                }
-            ]
-        },
-        {
-            "id": "{Hours} hours",
-            "message": "{Hours} hours",
-            "translation": {
-                "select": {
-                    "feature": "plural",
-                    "arg": "Hours",
-                    "cases": {
-                        "=1": {
-                            "msg": "{Hours} hora"
-                        },
-                        "other": {
-                            "msg": "{Hours} horas"
-                        }
-                    }
-                }
-            },
-            "placeholders": [
-                {
-                    "id": "Hours",
-                    "string": "%[1]d",
-                    "type": "int",
-                    "underlyingType": "int",
-                    "argNum": 1,
-                    "expr": "counter.Hours"
-                }
-            ]
-        },
-        {
-            "id": "{Minutes} minutes",
-            "message": "{Minutes} minutes",
-            "translation": {
-                "select": {
-                    "feature": "plural",
-                    "arg": "Minutes",
-                    "cases": {
-                        "=1": {
-                            "msg": "{Minutes} minuto"
-                        },
-                        "other": {
-                            "msg": "{Minutes} minutos"
-                        }
-                    }
-                }
-            },
-            "placeholders": [
-                {
-                    "id": "Minutes",
-                    "string": "%[1]d",
-                    "type": "int",
-                    "underlyingType": "int",
-                    "argNum": 1,
-                    "expr": "counter.Minutes"
-                }
-            ]
-        },
-        {
-            "id": "{Name} has created a notifier which connects this channel to an external calendar.",
-            "message": "{Name} has created a notifier which connects this channel to an external calendar.",
-            "translation": "{Name} ha creado un notificador que conecta este canal con un calendario externo.",
-            "placeholders": [
-                {
-                    "id": "Name",
-                    "string": "%[1]s",
-                    "type": "string",
-                    "underlyingType": "string",
-                    "argNum": 1,
-                    "expr": "user.Name"
-                }
-            ]
-        },
-        {
-            "id": "{Name} has deleted a notifier which connected this channel to an external calendar.",
-            "message": "{Name} has deleted a notifier which connected this channel to an external calendar.",
-            "translation": "{Name} ha eliminado un notificador que conectaba este canal a un calendario externo.",
-            "placeholders": [
-                {
-                    "id": "Name",
-                    "string": "%[1]s",
-                    "type": "string",
-                    "underlyingType": "string",
-                    "argNum": 1,
-                    "expr": "user.Name"
-                }
-            ]
-        },
-        {
-            "id": "Events for the next {Days} days",
-            "message": "Events for the next {Days} days",
-            "translation": {
-                "select": {
-                    "feature": "plural",
-                    "arg": "Days",
-                    "cases": {
-                        "=1": {
-                            "msg": "Eventos no dia seguinte"
-                        },
-                        "other": {
-                            "msg": "Eventos nos próximos {Days} dias"
-                        }
-                    }
-                }
-            },
-            "placeholders": [
-                {
-                    "id": "Days",
-                    "string": "%[1]d",
-                    "type": "int",
-                    "underlyingType": "int",
-                    "argNum": 1,
-                    "expr": "eventSummary.Days"
-                }
-            ]
-        },
-        {
-            "id": "No events scheduled",
-            "message": "No events scheduled",
-            "translation": "Sem eventos programados"
-        },
-        {
-            "id": "All Day",
-            "message": "All Day",
-            "translation": "Todo o dia"
-        },
-        {
-            "id": "New event scheduled",
-            "message": "New event scheduled",
-            "translation": "Novo evento programado"
-        },
-        {
-            "id": "Event has been cancelled",
-            "message": "Event has been cancelled",
-            "translation": "O evento foi cancelado"
-        },
-        {
-            "id": "Updated",
-            "message": "Updated",
-            "translation": "Atualizado"
-        },
-        {
-            "id": "Location",
-            "message": "Location",
-            "translation": "Local"
-        },
-        {
-            "id": "Scheduled for",
-            "message": "Scheduled for",
-            "translation": "Programado para"
-        },
-        {
-            "id": "Duration",
-            "message": "Duration",
-            "translation": "Duração"
-        },
-        {
-            "id": "Starting",
-            "message": "Starting",
-            "translation": "A começar"
+            "other": {
+              "msg": "{Months} meses"
+            }
+          }
         }
-    ]
+      },
+      "placeholders": [
+        {
+          "id": "Months",
+          "string": "%[1]d",
+          "type": "int",
+          "underlyingType": "int",
+          "argNum": 1,
+          "expr": "counter.Months"
+        }
+      ]
+    },
+    {
+      "id": "{Days} days",
+      "message": "{Days} days",
+      "translation": {
+        "select": {
+          "feature": "plural",
+          "arg": "Days",
+          "cases": {
+            "=1": {
+              "msg": "{Days} dia"
+            },
+            "other": {
+              "msg": "{Days} dias"
+            }
+          }
+        }
+      },
+      "placeholders": [
+        {
+          "id": "Days",
+          "string": "%[1]d",
+          "type": "int",
+          "underlyingType": "int",
+          "argNum": 1,
+          "expr": "counter.Days"
+        }
+      ]
+    },
+    {
+      "id": "{Hours} hours",
+      "message": "{Hours} hours",
+      "translation": {
+        "select": {
+          "feature": "plural",
+          "arg": "Hours",
+          "cases": {
+            "=1": {
+              "msg": "{Hours} hora"
+            },
+            "other": {
+              "msg": "{Hours} horas"
+            }
+          }
+        }
+      },
+      "placeholders": [
+        {
+          "id": "Hours",
+          "string": "%[1]d",
+          "type": "int",
+          "underlyingType": "int",
+          "argNum": 1,
+          "expr": "counter.Hours"
+        }
+      ]
+    },
+    {
+      "id": "{Minutes} minutes",
+      "message": "{Minutes} minutes",
+      "translation": {
+        "select": {
+          "feature": "plural",
+          "arg": "Minutes",
+          "cases": {
+            "=1": {
+              "msg": "{Minutes} minuto"
+            },
+            "other": {
+              "msg": "{Minutes} minutos"
+            }
+          }
+        }
+      },
+      "placeholders": [
+        {
+          "id": "Minutes",
+          "string": "%[1]d",
+          "type": "int",
+          "underlyingType": "int",
+          "argNum": 1,
+          "expr": "counter.Minutes"
+        }
+      ]
+    },
+    {
+      "id": "New recurring event scheduled",
+      "message": "New recurring event scheduled",
+      "translation": "Novo evento recorrente agendado"
+    },
+    {
+      "id": "{RecurringCount} future instances also created",
+      "message": "{RecurringCount} future instances also created",
+      "translation": {
+        "select": {
+          "feature": "plural",
+          "arg": "RecurringCount",
+          "cases": {
+            "=1": {
+              "msg": "{RecurringCount} instância futura também criada"
+            },
+            "other": {
+              "msg": "{RecurringCount} instâncias futuras também criadas"
+            }
+          }
+        }
+      },
+      "placeholders": [
+        {
+          "id": "RecurringCount",
+          "string": "%[1]d",
+          "type": "int",
+          "underlyingType": "int",
+          "argNum": 1,
+          "expr": "d.RecurringCount"
+        }
+      ]
+    },
+    {
+      "id": "1 event created",
+      "message": "1 event created",
+      "translation": "1 evento criado"
+    },
+    {
+      "id": "New event scheduled",
+      "message": "New event scheduled",
+      "translation": "Novo evento programado"
+    },
+    {
+      "id": "New recurring event found",
+      "message": "New recurring event found",
+      "translation": "Novo evento recorrente encontrado"
+    },
+    {
+      "id": "{RecurringCount} future instances also found",
+      "message": "{RecurringCount} future instances also found",
+      "translation": {
+        "select": {
+          "feature": "plural",
+          "arg": "RecurringCount",
+          "cases": {
+            "=1": {
+              "msg": "{RecurringCount} instância futura também encontrada"
+            },
+            "other": {
+              "msg": "{RecurringCount} instâncias futuras também encontradas"
+            }
+          }
+        }
+      },
+      "placeholders": [
+        {
+          "id": "RecurringCount",
+          "string": "%[1]d",
+          "type": "int",
+          "underlyingType": "int",
+          "argNum": 1,
+          "expr": "d.RecurringCount"
+        }
+      ]
+    },
+    {
+      "id": "1 event found",
+      "message": "1 event found",
+      "translation": "1 evento encontrado"
+    },
+    {
+      "id": "New event found",
+      "message": "New event found",
+      "translation": "Novo evento encontrado"
+    },
+    {
+      "id": "Recurring Event Updated",
+      "message": "Recurring Event Updated",
+      "translation": "Evento recorrente atualizado"
+    },
+    {
+      "id": "{RecurringCount} future instances also updated",
+      "message": "{RecurringCount} future instances also updated",
+      "translation": {
+        "select": {
+          "feature": "plural",
+          "arg": "RecurringCount",
+          "cases": {
+            "=1": {
+              "msg": "{RecurringCount} instância futura também atualizada"
+            },
+            "other": {
+              "msg": "{RecurringCount} instâncias futuras também atualizadas"
+            }
+          }
+        }
+      },
+      "placeholders": [
+        {
+          "id": "RecurringCount",
+          "string": "%[1]d",
+          "type": "int",
+          "underlyingType": "int",
+          "argNum": 1,
+          "expr": "d.RecurringCount"
+        }
+      ]
+    },
+    {
+      "id": "1 event updated",
+      "message": "1 event updated",
+      "translation": "1 evento atualizado"
+    },
+    {
+      "id": "Event Updated",
+      "message": "Event Updated",
+      "translation": "Evento atualizado"
+    },
+    {
+      "id": "Starting",
+      "message": "Starting",
+      "translation": "A começar"
+    },
+    {
+      "id": "Recurring event has been cancelled",
+      "message": "Recurring event has been cancelled",
+      "translation": "O evento recorrente foi cancelado"
+    },
+    {
+      "id": "{RecurringCount} future instances also cancelled",
+      "message": "{RecurringCount} future instances also cancelled",
+      "translation": {
+        "select": {
+          "feature": "plural",
+          "arg": "RecurringCount",
+          "cases": {
+            "=1": {
+              "msg": "{RecurringCount} instância futura também cancelada"
+            },
+            "other": {
+              "msg": "{RecurringCount} instâncias futuras também canceladas"
+            }
+          }
+        }
+      },
+      "placeholders": [
+        {
+          "id": "RecurringCount",
+          "string": "%[1]d",
+          "type": "int",
+          "underlyingType": "int",
+          "argNum": 1,
+          "expr": "d.RecurringCount"
+        }
+      ]
+    },
+    {
+      "id": "1 event cancelled",
+      "message": "1 event cancelled",
+      "translation": "1 evento cancelado"
+    },
+    {
+      "id": "Event has been cancelled",
+      "message": "Event has been cancelled",
+      "translation": "O evento foi cancelado"
+    },
+    {
+      "id": "Events for the next {Days} days",
+      "message": "Events for the next {Days} days",
+      "translation": {
+        "select": {
+          "feature": "plural",
+          "arg": "Days",
+          "cases": {
+            "=1": {
+              "msg": "Eventos no dia seguinte"
+            },
+            "other": {
+              "msg": "Eventos nos próximos {Days} dias"
+            }
+          }
+        }
+      },
+      "placeholders": [
+        {
+          "id": "Days",
+          "string": "%[1]d",
+          "type": "int",
+          "underlyingType": "int",
+          "argNum": 1,
+          "expr": "eventSummary.Days"
+        }
+      ]
+    },
+    {
+      "id": "All Day",
+      "message": "All Day",
+      "translation": "Todo o dia"
+    },
+    {
+      "id": "{Name} has created a notifier which connects this channel to an external calendar.",
+      "message": "{Name} has created a notifier which connects this channel to an external calendar.",
+      "translation": "{Name} ha creado un notificador que conecta este canal con un calendario externo.",
+      "placeholders": [
+        {
+          "id": "Name",
+          "string": "%[1]s",
+          "type": "string",
+          "underlyingType": "string",
+          "argNum": 1,
+          "expr": "user.Name"
+        }
+      ]
+    },
+    {
+      "id": "{Name} has deleted a notifier which connected this channel to an external calendar.",
+      "message": "{Name} has deleted a notifier which connected this channel to an external calendar.",
+      "translation": "{Name} ha eliminado un notificador que conectaba este canal a un calendario externo.",
+      "placeholders": [
+        {
+          "id": "Name",
+          "string": "%[1]s",
+          "type": "string",
+          "underlyingType": "string",
+          "argNum": 1,
+          "expr": "user.Name"
+        }
+      ]
+    },
+    {
+      "id": "Location",
+      "message": "Location",
+      "translation": "Local"
+    },
+    {
+      "id": "Scheduled for",
+      "message": "Scheduled for",
+      "translation": "Programado para"
+    },
+    {
+      "id": "Duration",
+      "message": "Duration",
+      "translation": "Duração"
+    }
+  ]
 }
