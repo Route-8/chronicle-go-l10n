@@ -105,3 +105,23 @@ var timeagoCzechConfig = timeago.Config{
 	Max:           30 * 24 * time.Hour,
 	DefaultLayout: "2006-01-02",
 }
+
+var timeagoPolishConfig = timeago.Config{
+	PastPrefix:   "",
+	PastSuffix:   " temu",
+	FuturePrefix: "za ",
+	FutureSuffix: "",
+
+	Periods: []timeago.FormatPeriod{
+		{D: time.Second, One: "jedna sekunda", Many: "%d sekund"},
+		{D: time.Minute, One: "jedna minuta", Many: "%d minut"},
+		{D: time.Hour, One: "jedna godzina", Many: "%d godzin"},
+		{D: timeago.Day, One: "jeden dzień", Many: "%d dni"},
+		{D: timeago.Month, One: "jeden miesiąc", Many: "%d miesięcy"},
+		{D: timeago.Year, One: "jeden rok", Many: "%d lata"},
+	},
+
+	Zero:          "zero",
+	Max:           30 * 24 * time.Hour,
+	DefaultLayout: "2006-01-02",
+}
