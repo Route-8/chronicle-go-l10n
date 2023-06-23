@@ -413,6 +413,11 @@
       ]
     },
     {
+      "id": "Summary of Upcoming Events",
+      "message": "Summary of Upcoming Events",
+      "translation": "Shrnutí nadcházejících akcí"
+    },
+    {
       "id": "Location",
       "message": "Location",
       "translation": "Místo konání"

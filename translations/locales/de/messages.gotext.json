@@ -341,6 +341,11 @@
       ]
     },
     {
+      "id": "Summary of Upcoming Events",
+      "message": "Summary of Upcoming Events",
+      "translation": "Zusammenfassung der bevorstehenden Veranstaltungen"
+    },
+    {
       "id": "Location",
       "message": "Location",
       "translation": "Veranstaltungsort"

@@ -341,6 +341,11 @@
       ]
     },
     {
+      "id": "Summary of Upcoming Events",
+      "message": "Summary of Upcoming Events",
+      "translation": "Sammanfattning av kommande evenemang"
+    },
+    {
       "id": "Location",
       "message": "Location",
       "translation": "Plats"

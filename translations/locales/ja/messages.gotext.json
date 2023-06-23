@@ -341,6 +341,11 @@
       ]
     },
     {
+      "id": "Summary of Upcoming Events",
+      "message": "Summary of Upcoming Events",
+      "translation": "今後のイベントの概要"
+    },
+    {
       "id": "Location",
       "message": "Location",
       "translation": "場所"

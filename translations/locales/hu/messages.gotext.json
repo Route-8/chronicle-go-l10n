@@ -341,6 +341,11 @@
       ]
     },
     {
+      "id": "Summary of Upcoming Events",
+      "message": "Summary of Upcoming Events",
+      "translation": "A közelgő események összefoglalója"
+    },
+    {
       "id": "Location",
       "message": "Location",
       "translation": "Helyszín"
