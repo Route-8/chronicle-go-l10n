@@ -1,0 +1,364 @@
+{
+  "language": "fi",
+  "messages": [
+    {
+      "id": "{Months} months",
+      "message": "{Months} months",
+      "translation": {
+        "select": {
+          "feature": "plural",
+          "arg": "Months",
+          "cases": {
+            "=1": {
+              "msg": "{Months} kuukausi"
+            },
+            "other": {
+              "msg": "{Months} kuukautta"
+            }
+          }
+        }
+      },
+      "placeholders": [
+        {
+          "id": "Months",
+          "string": "%[1]d",
+          "type": "int",
+          "underlyingType": "int",
+          "argNum": 1,
+          "expr": "counter.Months"
+        }
+      ]
+    },
+    {
+      "id": "{Days} days",
+      "message": "{Days} days",
+      "translation": {
+        "select": {
+          "feature": "plural",
+          "arg": "Days",
+          "cases": {
+            "=1": {
+              "msg": "{Days} päivä"
+            },
+            "other": {
+              "msg": "{Days} päivää"
+            }
+          }
+        }
+      },
+      "placeholders": [
+        {
+          "id": "Days",
+          "string": "%[1]d",
+          "type": "int",
+          "underlyingType": "int",
+          "argNum": 1,
+          "expr": "counter.Days"
+        }
+      ]
+    },
+    {
+      "id": "{Hours} hours",
+      "message": "{Hours} hours",
+      "translation": {
+        "select": {
+          "feature": "plural",
+          "arg": "Hours",
+          "cases": {
+            "=1": {
+              "msg": "{Hours} tunti"
+            },
+            "other": {
+              "msg": "{Hours} tuntia"
+            }
+          }
+        }
+      },
+      "placeholders": [
+        {
+          "id": "Hours",
+          "string": "%[1]d",
+          "type": "int",
+          "underlyingType": "int",
+          "argNum": 1,
+          "expr": "counter.Hours"
+        }
+      ]
+    },
+    {
+      "id": "{Minutes} minutes",
+      "message": "{Minutes} minutes",
+      "translation": {
+        "select": {
+          "feature": "plural",
+          "arg": "Minutes",
+          "cases": {
+            "=1": {
+              "msg": "{Minutes} minuutti"
+            },
+            "other": {
+              "msg": "{Minutes} minuuttia"
+            }
+          }
+        }
+      },
+      "placeholders": [
+        {
+          "id": "Minutes",
+          "string": "%[1]d",
+          "type": "int",
+          "underlyingType": "int",
+          "argNum": 1,
+          "expr": "counter.Minutes"
+        }
+      ]
+    },
+    {
+      "id": "New recurring event scheduled",
+      "message": "New recurring event scheduled",
+      "translation": "Uusi toistuva tapahtuma ajoitettu"
+    },
+    {
+      "id": "{RecurringCount} future instances also created",
+      "message": "{RecurringCount} future instances also created",
+      "translation": {
+        "select": {
+          "feature": "plural",
+          "arg": "RecurringCount",
+          "cases": {
+            "=1": {
+              "msg": "{RecurringCount} tuleva tapahtuma myös luotu"
+            },
+            "other": {
+              "msg": "{RecurringCount} tulevaa tapahtumaa myös luotu"
+            }
+          }
+        }
+      },
+      "placeholders": [
+        {
+          "id": "RecurringCount",
+          "string": "%[1]d",
+          "type": "int",
+          "underlyingType": "int",
+          "argNum": 1,
+          "expr": "d.RecurringCount"
+        }
+      ]
+    },
+    {
+      "id": "1 event created",
+      "message": "1 event created",
+      "translation": "1 tapahtuma luotu"
+    },
+    {
+      "id": "New event scheduled",
+      "message": "New event scheduled",
+      "translation": "Uusi tapahtuma ajoitettu"
+    },
+    {
+      "id": "New recurring event found",
+      "message": "New recurring event found",
+      "translation": "Uusi toistuva tapahtuma löydetty"
+    },
+    {
+      "id": "{RecurringCount} future instances also found",
+      "message": "{RecurringCount} future instances also found",
+      "translation": {
+        "select": {
+          "feature": "plural",
+          "arg": "RecurringCount",
+          "cases": {
+            "=1": {
+              "msg": "{RecurringCount} tuleva tapahtuma myös löytynyt"
+            },
+            "other": {
+              "msg": "{RecurringCount} tulevaa tapahtumaa myös löytynyt"
+            }
+          }
+        }
+      },
+      "placeholders": [
+        {
+          "id": "RecurringCount",
+          "string": "%[1]d",
+          "type": "int",
+          "underlyingType": "int",
+          "argNum": 1,
+          "expr": "d.RecurringCount"
+        }
+      ]
+    },
+    {
+      "id": "1 event found",
+      "message": "1 event found",
+      "translation": "1 tapahtuma löytynyt"
+    },
+    {
+      "id": "New event found",
+      "message": "New event found",
+      "translation": "Uusi tapahtuma löytynyt"
+    },
+    {
+      "id": "Recurring Event Updated",
+      "message": "Recurring Event Updated",
+      "translation": "Toistuva tapahtuma päivitetty"
+    },
+    {
+      "id": "{RecurringCount} future instances also updated",
+      "message": "{RecurringCount} future instances also updated",
+      "translation": {
+        "select": {
+          "feature": "plural",
+          "arg": "RecurringCount",
+          "cases": {
+            "=1": {
+              "msg": "{RecurringCount} tuleva tapahtuma myös päivitetty"
+            },
+            "other": {
+              "msg": "{RecurringCount} tulevaa tapahtumaa myös päivitetty"
+            }
+          }
+        }
+      },
+      "placeholders": [
+        {
+          "id": "RecurringCount",
+          "string": "%[1]d",
+          "type": "int",
+          "underlyingType": "int",
+          "argNum": 1,
+          "expr": "d.RecurringCount"
+        }
+      ]
+    },
+    {
+      "id": "1 event updated",
+      "message": "1 event updated",
+      "translation": "1 tapahtuma päivitetty"
+    },
+    {
+      "id": "Event Updated",
+      "message": "Event Updated",
+      "translation": "Tapahtuma päivitetty"
+    },
+    {
+      "id": "Starting",
+      "message": "Starting",
+      "translation": "Alkaen"
+    },
+    {
+      "id": "Recurring event has been cancelled",
+      "message": "Recurring event has been cancelled",
+      "translation": "Toistuva tapahtuma on peruttu"
+    },
+    {
+      "id": "{RecurringCount} future instances also cancelled",
+      "message": "{RecurringCount} future instances also cancelled",
+      "translation": {
+        "select": {
+          "feature": "plural",
+          "arg": "RecurringCount",
+          "cases": {
+            "=1": {
+              "msg": "{RecurringCount} tuleva tapahtuma myös peruttu"
+            },
+            "other": {
+              "msg": "{RecurringCount} tulevaa tapahtumaa myös peruttu"
+            }
+          }
+        }
+      },
+      "placeholders": [
+        {
+          "id": "RecurringCount",
+          "string": "%[1]d",
+          "type": "int",
+          "underlyingType": "int",
+          "argNum": 1,
+          "expr": "d.RecurringCount"
+        }
+      ]
+    },
+    {
+      "id": "1 event cancelled",
+      "message": "1 event cancelled",
+      "translation": "1 tapahtuma peruttu"
+    },
+    {
+      "id": "Event has been cancelled",
+      "message": "Event has been cancelled",
+      "translation": "Tapahtuma on peruttu"
+    },
+    {
+      "id": "Events for the next {Days} days",
+      "message": "Events for the next {Days} days",
+      "translation": "Tapahtumat tuleville {Days} päivälle",
+      "placeholders": [
+        {
+          "id": "Days",
+          "string": "%[1]d",
+          "type": "int",
+          "underlyingType": "int",
+          "argNum": 1,
+          "expr": "eventSummary.Days"
+        }
+      ]
+    },
+    {
+      "id": "All Day",
+      "message": "All Day",
+      "translation": "Koko päivä"
+    },
+    {
+      "id": "{Name} has created a notifier which connects this channel to an external calendar.",
+      "message": "{Name} has created a notifier which connects this channel to an external calendar.",
+      "translation": "{Name} on luonut lähteen joka yhdistää tämän kanavan ulkoiseen kalenteriin.",
+      "placeholders": [
+        {
+          "id": "Name",
+          "string": "%[1]s",
+          "type": "string",
+          "underlyingType": "string",
+          "argNum": 1,
+          "expr": "user.Name"
+        }
+      ]
+    },
+    {
+      "id": "{Name} has deleted a notifier which connected this channel to an external calendar.",
+      "message": "{Name} has deleted a notifier which connected this channel to an external calendar.",
+      "translation": "{Name} on poistanut lähteen joka yhdisti tämän kanavan ulkoiseen kalenteriin.",
+      "placeholders": [
+        {
+          "id": "Name",
+          "string": "%[1]s",
+          "type": "string",
+          "underlyingType": "string",
+          "argNum": 1,
+          "expr": "user.Name"
+        }
+      ]
+    },
+    {
+      "id": "Summary of Upcoming Events",
+      "message": "Summary of Upcoming Events",
+      "translation": "Yhteenveto tulevista tapahtumista"
+    },
+    {
+      "id": "Location",
+      "message": "Location",
+      "translation": "Paikka"
+    },
+    {
+      "id": "Scheduled for",
+      "message": "Scheduled for",
+      "translation": "Ajankohta"
+    },
+    {
+      "id": "Duration",
+      "message": "Duration",
+      "translation": "Kesto"
+    }
+  ]
+}

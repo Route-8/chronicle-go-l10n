@@ -31,6 +31,7 @@ func init() {
 		"de":    &dictionary{index: deIndex, data: deData},
 		"en_US": &dictionary{index: en_USIndex, data: en_USData},
 		"es":    &dictionary{index: esIndex, data: esData},
+		"fi":    &dictionary{index: fiIndex, data: fiData},
 		"fr":    &dictionary{index: frIndex, data: frData},
 		"hu":    &dictionary{index: huIndex, data: huData},
 		"ja":    &dictionary{index: jaIndex, data: jaData},
@@ -225,6 +226,39 @@ const esData string = "" + // Size: 1166 bytes
 	"\x01\x81\x01\x00=\x01\x0b\x02%[1]d día\x00\x0c\x02%[1]d días\x14\x01\x81" +
 	"\x01\x00=\x01\x0b\x02%[1]d hora\x00\x0c\x02%[1]d horas\x14\x01\x81\x01" +
 	"\x00=\x01\x0d\x02%[1]d minuto\x00\x0e\x02%[1]d minutos"
+
+var fiIndex = []uint32{ // 30 elements
+	0x00000000, 0x00000022, 0x00000074, 0x00000086,
+	0x0000009f, 0x000000c1, 0x0000011b, 0x00000131,
+	0x0000014a, 0x00000169, 0x000001c7, 0x000001df,
+	0x000001f5, 0x000001fc, 0x0000021a, 0x00000270,
+	0x00000284, 0x00000299, 0x000002bf, 0x000002cc,
+	0x0000031c, 0x0000036c, 0x0000038e, 0x00000395,
+	0x0000039f, 0x000003a5, 0x000003ce, 0x000003f6,
+	0x00000419, 0x00000442,
+} // Size: 144 bytes
+
+const fiData string = "" + // Size: 1090 bytes
+	"\x02Uusi toistuva tapahtuma ajoitettu\x14\x01\x81\x01\x00=\x01#\x02%[1]d" +
+	" tuleva tapahtuma myös luotu\x00%\x02%[1]d tulevaa tapahtumaa myös luotu" +
+	"\x021 tapahtuma luotu\x02Uusi tapahtuma ajoitettu\x02Uusi toistuva tapah" +
+	"tuma löydetty\x14\x01\x81\x01\x00=\x01'\x02%[1]d tuleva tapahtuma myös l" +
+	"öytynyt\x00)\x02%[1]d tulevaa tapahtumaa myös löytynyt\x021 tapahtuma l" +
+	"öytynyt\x02Uusi tapahtuma löytynyt\x02Toistuva tapahtuma päivitetty\x14" +
+	"\x01\x81\x01\x00=\x01)\x02%[1]d tuleva tapahtuma myös päivitetty\x00+" +
+	"\x02%[1]d tulevaa tapahtumaa myös päivitetty\x021 tapahtuma päivitetty" +
+	"\x02Tapahtuma päivitetty\x02Alkaen\x02Toistuva tapahtuma on peruttu\x14" +
+	"\x01\x81\x01\x00=\x01%\x02%[1]d tuleva tapahtuma myös peruttu\x00'\x02%[" +
+	"1]d tulevaa tapahtumaa myös peruttu\x021 tapahtuma peruttu\x02Tapahtuma " +
+	"on peruttu\x02Tapahtumat tuleville %[1]d päivälle\x02Koko päivä\x02%[1]s" +
+	" on luonut lähteen joka yhdistää tämän kanavan ulkoiseen kalenteriin." +
+	"\x02%[1]s on poistanut lähteen joka yhdisti tämän kanavan ulkoiseen kale" +
+	"nteriin.\x02Yhteenveto tulevista tapahtumista\x02Paikka\x02Ajankohta\x02" +
+	"Kesto\x14\x01\x81\x01\x00=\x01\x0f\x02%[1]d kuukausi\x00\x10\x02%[1]d ku" +
+	"ukautta\x14\x01\x81\x01\x00=\x01\x0e\x02%[1]d päivä\x00\x10\x02%[1]d päi" +
+	"vää\x14\x01\x81\x01\x00=\x01\x0c\x02%[1]d tunti\x00\x0d\x02%[1]d tuntia" +
+	"\x14\x01\x81\x01\x00=\x01\x0f\x02%[1]d minuutti\x00\x10\x02%[1]d minuutt" +
+	"ia"
 
 var frIndex = []uint32{ // 30 elements
 	0x00000000, 0x00000029, 0x00000088, 0x0000009d,
@@ -497,4 +531,4 @@ const svData string = "" + // Size: 1074 bytes
 	"\x14\x01\x81\x01\x00=\x01\x0c\x02%[1]d Timme\x00\x0d\x02%[1]d Timmar\x14" +
 	"\x01\x81\x01\x00=\x01\x0c\x02%[1]d Minut\x00\x0e\x02%[1]d Minuter"
 
-	// Total table size 18504 bytes (18KiB); checksum: 844F9709
+	// Total table size 19738 bytes (19KiB); checksum: FED2D1E

@@ -17,6 +17,7 @@ At the moment the following locales are supported:
 - Russian (thanks to ChickenDuk [Любомир])
 - Czech (thanks to Matýsek)
 - Polish (thanks to Shadii)
+- Finnish (thanks to Countess)
 
 The locale files can be found under [/translations/locales/](https://github.com/Route-8/chronicle-go-l10n/tree/main/translations/locales)
 

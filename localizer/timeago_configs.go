@@ -125,3 +125,23 @@ var timeagoPolishConfig = timeago.Config{
 	Max:           30 * 24 * time.Hour,
 	DefaultLayout: "2006-01-02",
 }
+
+var timeagoFinnishConfig = timeago.Config{
+	PastPrefix:   "",
+	PastSuffix:   " sitten",
+	FuturePrefix: "",
+	FutureSuffix: " päästä",
+
+	Periods: []timeago.FormatPeriod{
+		{D: time.Second, One: "yksi sekunti", Many: "%d sekuntia"},
+		{D: time.Minute, One: "yksi minuutti", Many: "%d minuuttia"},
+		{D: time.Hour, One: "yksi tunti", Many: "%d tuntia"},
+		{D: timeago.Day, One: "yksi päivä", Many: "%d päivää"},
+		{D: timeago.Month, One: "yksi kuukausi", Many: "%d kuukautta"},
+		{D: timeago.Year, One: "yksi vuosi", Many: "%d vuotta"},
+	},
+
+	Zero:          "nolla",
+	Max:           30 * 24 * time.Hour,
+	DefaultLayout: "02.01.2006",
+}
