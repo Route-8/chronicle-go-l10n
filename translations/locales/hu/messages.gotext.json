@@ -291,6 +291,11 @@
       "translation": "Az eseményt törölték"
     },
     {
+      "id": "No events were found for this summary",
+      "message": "No events were found for this summary",
+      "translation": "Ehhez az összefoglalóhoz nem található események"
+    },
+    {
       "id": "Events for the next {Days} days",
       "message": "Events for the next {Days} days",
       "translation": "A következő {Days} nap eseményei",

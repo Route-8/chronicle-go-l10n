@@ -291,6 +291,11 @@
       "translation": "Event har blivit inställt"
     },
     {
+      "id": "No events were found for this summary",
+      "message": "No events were found for this summary",
+      "translation": "Inga händelser hittades för denna sammanfattning"
+    },
+    {
       "id": "Events for the next {Days} days",
       "message": "Events for the next {Days} days",
       "translation": "Event de kommande {Days} dagarna",

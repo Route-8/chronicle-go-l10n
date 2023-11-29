@@ -363,6 +363,11 @@
       "translation": "Událost byla zrušena"
     },
     {
+      "id": "No events were found for this summary",
+      "message": "No events were found for this summary",
+      "translation": "Pro tento souhrn nebyly nalezeny žádné události"
+    },
+    {
       "id": "Events for the next {Days} days",
       "message": "Events for the next {Days} days",
       "translation": "Akce v příštích {Days} dnech",

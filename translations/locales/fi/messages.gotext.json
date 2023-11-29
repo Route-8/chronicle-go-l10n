@@ -291,6 +291,11 @@
       "translation": "Tapahtuma on peruttu"
     },
     {
+      "id": "No events were found for this summary",
+      "message": "No events were found for this summary",
+      "translation": "Tälle yhteenvedolle ei löytynyt tapahtumia"
+    },
+    {
       "id": "Events for the next {Days} days",
       "message": "Events for the next {Days} days",
       "translation": "Tapahtumat tuleville {Days} päivälle",

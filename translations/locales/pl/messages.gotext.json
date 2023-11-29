@@ -291,6 +291,11 @@
       "translation": "Wydarzenie zostało anulowane"
     },
     {
+      "id": "No events were found for this summary",
+      "message": "No events were found for this summary",
+      "translation": "Nie znaleziono żadnych wydarzeń dla tego podsumowania"
+    },
+    {
       "id": "Events for the next {Days} days",
       "message": "Events for the next {Days} days",
       "translation": "Wydarzenia na następne {Days} dni",

@@ -278,6 +278,11 @@
       "translation": "Evenement is geannuleerd"
     },
     {
+      "id": "No events were found for this summary",
+      "message": "No events were found for this summary",
+      "translation": "Er zijn geen evenementen gevonden voor deze samenvatting"
+    },
+    {
       "id": "Events for the next {Days} days",
       "message": "Events for the next {Days} days",
       "translation": {

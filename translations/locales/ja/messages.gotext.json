@@ -291,6 +291,11 @@
       "translation": "イベントは中止となりました"
     },
     {
+      "id": "No events were found for this summary",
+      "message": "No events were found for this summary",
+      "translation": "このサマリーのイベントは見つかりませんでした"
+    },
+    {
       "id": "Events for the next {Days} days",
       "message": "Events for the next {Days} days",
       "translation": "{Days}日間のイベント情報",

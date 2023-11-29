@@ -291,6 +291,11 @@
       "translation": "Veranstaltung wurde abgesagt"
     },
     {
+      "id": "No events were found for this summary",
+      "message": "No events were found for this summary",
+      "translation": "Für diese Zusammenfassung wurden keine Ereignisse gefunden"
+    },
+    {
       "id": "Events for the next {Days} days",
       "message": "Events for the next {Days} days",
       "translation": "Veranstaltungen für die nächsten {Days} Tage",

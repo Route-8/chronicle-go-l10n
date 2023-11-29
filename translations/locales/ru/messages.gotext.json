@@ -363,6 +363,11 @@
       "translation": "Событие было отменено"
     },
     {
+      "id": "No events were found for this summary",
+      "message": "No events were found for this summary",
+      "translation": "Для этой сводки событий не найдено"
+    },
+    {
       "id": "Events for the next {Days} days",
       "message": "Events for the next {Days} days",
       "translation": "События на ближайшие  {Days} Дней",
