@@ -9,11 +9,17 @@
           "feature": "plural",
           "arg": "Months",
           "cases": {
-            "=1": {
-              "msg": "{Months} Miesiąc"
+            "one": {
+              "msg": "{Months} miesiąc"
+            },
+            "few": {
+              "msg": "{Months} miesiące"
+            },
+            "many": {
+              "msg": "{Months} miesięcy"
             },
             "other": {
-              "msg": "{Months} Miesiące"
+              "msg": "{Months} miesiąca"
             }
           }
         }
@@ -37,11 +43,17 @@
           "feature": "plural",
           "arg": "Days",
           "cases": {
-            "=1": {
-              "msg": "{Days} Tag"
+            "one": {
+              "msg": "{Days} dzień"
+            },
+            "few": {
+              "msg": "{Days} dni"
+            },
+            "many": {
+              "msg": "{Days} dni"
             },
             "other": {
-              "msg": "{Days} Tagi"
+              "msg": "{Days} dnia"
             }
           }
         }
@@ -65,11 +77,17 @@
           "feature": "plural",
           "arg": "Hours",
           "cases": {
-            "=1": {
-              "msg": "{Hours} Godzina"
+            "one": {
+              "msg": "{Hours} godzina"
+            },
+            "few": {
+              "msg": "{Hours} godziny"
+            },
+            "many": {
+              "msg": "{Hours} godzin"
             },
             "other": {
-              "msg": "{Hours} Godziny"
+              "msg": "{Hours} godziny"
             }
           }
         }
@@ -93,11 +111,17 @@
           "feature": "plural",
           "arg": "Minutes",
           "cases": {
-            "=1": {
-              "msg": "{Minutes} Minuta"
+            "one": {
+              "msg": "{Minutes} minuta"
+            },
+            "few": {
+              "msg": "{Minutes} minuty"
+            },
+            "many": {
+              "msg": "{Minutes} minut"
             },
             "other": {
-              "msg": "{Minutes} Minuty"
+              "msg": "{Minutes} minuty"
             }
           }
         }
@@ -126,11 +150,17 @@
           "feature": "plural",
           "arg": "RecurringCount",
           "cases": {
-            "=1": {
-              "msg": "{RecurringCount} utworzono kolejną instancję"
+            "one": {
+              "msg": "Utworzono także {RecurringCount} przyszłą instancję"
+            },
+            "few": {
+              "msg": "Utworzono także {RecurringCount} przyszłe instancje"
+            },
+            "many": {
+              "msg": "Utworzono także {RecurringCount} przyszłych instancji"
             },
             "other": {
-              "msg": "{RecurringCount} utworzono kolejną instancję"
+              "msg": "Utworzono także {RecurringCount} przyszłej instancji"
             }
           }
         }
@@ -169,11 +199,17 @@
           "feature": "plural",
           "arg": "RecurringCount",
           "cases": {
-            "=1": {
-              "msg": "{RecurringCount} znaleziono inny przypadek"
+            "one": {
+              "msg": "Znaleziono także {RecurringCount} przyszłą instancję"
+            },
+            "few": {
+              "msg": "Znaleziono także {RecurringCount} przyszłe instancje"
+            },
+            "many": {
+              "msg": "Znaleziono także {RecurringCount} przyszłych instancji"
             },
             "other": {
-              "msg": "{RecurringCount} znaleziono więcej przypadków"
+              "msg": "Znaleziono także {RecurringCount} przyszłej instancji"
             }
           }
         }
@@ -192,17 +228,17 @@
     {
       "id": "1 event found",
       "message": "1 event found",
-      "translation": "Utworzono 1 wydarzenie"
+      "translation": "Znaleziono 1 wydarzenie"
     },
     {
       "id": "New event found",
       "message": "New event found",
-      "translation": "Utworzono nowe wydarzenie"
+      "translation": "Znaleziono nowe wydarzenie"
     },
     {
       "id": "Recurring Event Updated",
       "message": "Recurring Event Updated",
-      "translation": "Aktualizacja wydarzenia cyklicznego"
+      "translation": "Zaktualizowano wydarzenie cykliczne"
     },
     {
       "id": "{RecurringCount} future instances also updated",
@@ -212,11 +248,17 @@
           "feature": "plural",
           "arg": "RecurringCount",
           "cases": {
-            "=1": {
-              "msg": "{RecurringCount} przyszła instancja została również zaktualizowana"
+            "one": {
+              "msg": "Zaktualizowano także {RecurringCount} przyszłą instancję"
+            },
+            "few": {
+              "msg": "Zaktualizowano także {RecurringCount} przyszłe instancje"
+            },
+            "many": {
+              "msg": "Zaktualizowano także {RecurringCount} przyszłych instancji"
             },
             "other": {
-              "msg": "{RecurringCount} przyszłe instancje zostały również zaktualizowane"
+              "msg": "Zaktualizowano także {RecurringCount} przyszłej instancji"
             }
           }
         }
@@ -235,12 +277,12 @@
     {
       "id": "1 event updated",
       "message": "1 event updated",
-      "translation": "1 wydarzenie zostało zaktualizowane"
+      "translation": "Zaktualizowano 1 wydarzenie"
     },
     {
       "id": "Event Updated",
       "message": "Event Updated",
-      "translation": "Wydarzenie zaktualizowane"
+      "translation": "Zaktualizowano wydarzenie"
     },
     {
       "id": "Starting",
@@ -250,7 +292,7 @@
     {
       "id": "Recurring event has been cancelled",
       "message": "Recurring event has been cancelled",
-      "translation": "Wydarzenie cykliczne zostało anulowane"
+      "translation": "Wydarzenie cykliczne zostało odwołane"
     },
     {
       "id": "{RecurringCount} future instances also cancelled",
@@ -260,11 +302,17 @@
           "feature": "plural",
           "arg": "RecurringCount",
           "cases": {
-            "=1": {
-              "msg": "{RecurringCount} przyszła instancja również została anulowana"
+            "one": {
+              "msg": "Odwołano także {RecurringCount} przyszłą instancję"
+            },
+            "few": {
+              "msg": "Odwołano także {RecurringCount} przyszłe instancje"
+            },
+            "many": {
+              "msg": "Odwołano także {RecurringCount} przyszłych instancji"
             },
             "other": {
-              "msg": "{RecurringCount} przyszłe instancje również zostały anulowane"
+              "msg": "Odwołano także {RecurringCount} przyszłej instancji"
             }
           }
         }
@@ -283,7 +331,7 @@
     {
       "id": "1 event cancelled",
       "message": "1 event cancelled",
-      "translation": "1 wydarzenie zostało anulowane"
+      "translation": "Odwołano 1 wydarzenie"
     },
     {
       "id": "Event has been cancelled",
@@ -298,7 +346,26 @@
     {
       "id": "Events for the next {Days} days",
       "message": "Events for the next {Days} days",
-      "translation": "Wydarzenia na następne {Days} dni",
+      "translation": {
+        "select": {
+          "feature": "plural",
+          "arg": "Days",
+          "cases": {
+            "one": {
+              "msg": "Wydarzenia na następny {Days} dzień"
+            },
+            "few": {
+              "msg": "Wydarzenia na następne {Days} dni"
+            },
+            "many": {
+              "msg": "Wydarzenia na następnych {Days} dni"
+            },
+            "other": {
+              "msg": "Wydarzenia na następne {Days} dnia"
+            }
+          }
+        }
+      },
       "placeholders": [
         {
           "id": "Days",
@@ -318,7 +385,7 @@
     {
       "id": "{Name} has created a notifier which connects this channel to an external calendar.",
       "message": "{Name} has created a notifier which connects this channel to an external calendar.",
-      "translation": "{Name} utworzył/a powiadomienie, które łączy ten kanał z zewnętrznym kalendarzem.",
+      "translation": "{Name} utworzył_ powiadomienie, które łączy ten kanał z zewnętrznym kalendarzem.",
       "placeholders": [
         {
           "id": "Name",
@@ -333,7 +400,7 @@
     {
       "id": "{Name} has deleted a notifier which connected this channel to an external calendar.",
       "message": "{Name} has deleted a notifier which connected this channel to an external calendar.",
-      "translation": "{Name} usunął/eła powiadomienie, które łączyło ten kanał z zewnętrznym kalendarzem.",
+      "translation": "{Name} usun_ł_ powiadomienie, które łączyło ten kanał z zewnętrznym kalendarzem.",
       "placeholders": [
         {
           "id": "Name",
@@ -348,7 +415,7 @@
     {
       "id": "Summary of Upcoming Events",
       "message": "Summary of Upcoming Events",
-      "translation": "Podsumownie nadchodzących wydarzeń"
+      "translation": "Podsumowanie nadchodzących wydarzeń"
     },
     {
       "id": "Location",
