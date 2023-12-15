@@ -22,6 +22,11 @@ var mondayDateMappings = map[language.Tag]string{
 	language.Finnish:         monday.LocaleFiFI,
 }
 
+func init() {
+	// Add custom date formats for some languages monday is missing
+	monday.FullFormatsByLocale[monday.LocalePlPL] = "Monday, 2 January 2006"
+}
+
 func (l *Localizer) FormatDate(date time.Time) string {
 	if l.dateLocale == nil {
 		l.dateLocale = lookupDateLocale(l.LanguageTag)
