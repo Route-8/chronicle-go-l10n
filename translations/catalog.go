@@ -27,7 +27,7 @@ func (d *dictionary) Lookup(key string) (data string, ok bool) {
 
 func init() {
 	dict := map[string]catalog.Dictionary{
-		"cs_CZ": &dictionary{index: cs_CZIndex, data: cs_CZData},
+		"cs":    &dictionary{index: csIndex, data: csData},
 		"de":    &dictionary{index: deIndex, data: deData},
 		"en_US": &dictionary{index: en_USIndex, data: en_USData},
 		"es":    &dictionary{index: esIndex, data: esData},
@@ -82,7 +82,7 @@ var messageKeyToIndex = map[string]int{
 	"Summary of Upcoming Events":         21,
 }
 
-var cs_CZIndex = []uint32{ // 31 elements
+var csIndex = []uint32{ // 31 elements
 	0x00000000, 0x00000031, 0x00000114, 0x0000012a,
 	0x0000014c, 0x00000178, 0x00000251, 0x00000265,
 	0x00000282, 0x000002a9, 0x000003a0, 0x000003ba,
@@ -93,7 +93,7 @@ var cs_CZIndex = []uint32{ // 31 elements
 	0x0000071e, 0x00000771, 0x00000771,
 } // Size: 148 bytes
 
-const cs_CZData string = "" + // Size: 1905 bytes
+const csData string = "" + // Size: 1905 bytes
 	"\x02Byla naplánována nová opakující se událost\x14\x01\x81\x01\x00=\x01)" +
 	"\x02%[1]d budoucí instance také vytvořena=\x02)\x02%[1]d budoucí instanc" +
 	"e také vytvořeny=\x03)\x02%[1]d budoucí instance také vytvořeny=\x04)" +
